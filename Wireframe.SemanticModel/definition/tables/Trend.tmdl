@@ -1,0 +1,53 @@
+table Trend
+	lineageTag: 15b3dd0a-9bfe-42ec-9cb3-9761d931f7ad
+
+	column Branch
+		dataType: string
+		lineageTag: 4e946752-57f7-4596-80e1-c20e630e5a0b
+		summarizeBy: none
+		sourceColumn: Branch
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month YY'
+		dataType: string
+		lineageTag: 89d2fc65-18dc-41e1-9a8e-f34701f97273
+		summarizeBy: none
+		sourceColumn: Month YY
+		sortByColumn: Sort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sort
+		dataType: int64
+		formatString: 0
+		lineageTag: ed973a5b-ec42-42e5-9796-50447515ae1c
+		summarizeBy: none
+		sourceColumn: Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	column Val
+		dataType: int64
+		formatString: 0
+		lineageTag: e814d70b-ca2d-4049-80dd-93548e1d81ae
+		summarizeBy: sum
+		sourceColumn: Val
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Trend = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("ZdK7CoNAEIXhVwnWKbIzO6uWkrtgE7ASCxPShpAubx/NunCOFgvBj5F/x3Rd1rRNts2a4buRMP5w49GdZv02UfX+RJLxeDGgZphJpyMO6PS8R/LTpAWgenhFsomdAB2ej41Mj/8cYsa5va0K54xIVCjBaAoKzedAVGhBgKhQDaeoMN2ruqx36BWIC5WnoNDTC7mwyIEWhR6IC/NIdXVdFnqHRIVhvnKagkIxnOJCdUD8lSUAUaFa+af95bgslHmHkagwXTlN4Q6LAMT/Q0WiQvEFEBeW4zb6Hw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Branch = _t, #"Month YY" = _t, Sort = _t, Val = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Branch", type text}, {"Month YY", type text}, {"Sort", Int64.Type}, {"Val", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

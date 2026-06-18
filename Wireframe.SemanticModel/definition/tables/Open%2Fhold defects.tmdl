@@ -1,0 +1,60 @@
+table 'Open/hold defects'
+	lineageTag: 8677b716-d4d2-4ae6-8125-93869fb8e446
+
+	column Defect
+		dataType: string
+		lineageTag: 16c5fef2-c666-47c5-9191-c5e4921e989e
+		summarizeBy: none
+		sourceColumn: Defect
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: int64
+		formatString: 0
+		lineageTag: b60bbdbf-b69e-41a1-b628-39c7dd06b815
+		summarizeBy: sum
+		sourceColumn: Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hold
+		dataType: int64
+		formatString: 0
+		lineageTag: cbdf6968-593b-42ab-8160-8cfcba09af70
+		summarizeBy: sum
+		sourceColumn: Hold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Exceeding threshold % open'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 62b57a52-7e0f-41db-a2db-ffd58e30c82f
+		summarizeBy: sum
+		sourceColumn: Exceeding threshold % open
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'close % exceeding threshold'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 574efd5d-6e18-4715-9763-9683c1f7ecd8
+		summarizeBy: sum
+		sourceColumn: close % exceeding threshold
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Open/hold defects' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("Pc5NC8IwDAbgv1IKu43g0vTDs4II4sXj6KFoGWNqD3X/34RVLy8lfcibcdTXMteszrWuWffaGQ7rJHYdJxpw1OnYC1SHUp7ze/oRF0RYcCLJQ3CbPKZXmvKDh34QixwDwl6YtYBt4SlVdclpYSsf0ky4bcLWPTR6+6z35X8kSa/xEgHIijUIFPgV4xc=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Defect = _t, Open = _t, Hold = _t, #"Exceeding threshold % open" = _t, #"close % exceeding threshold" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Defect", type text}, {"Open", Int64.Type}, {"Hold", Int64.Type}, {"Exceeding threshold % open", Percentage.Type}, {"close % exceeding threshold", Percentage.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

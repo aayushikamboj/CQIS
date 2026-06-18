@@ -1,0 +1,56 @@
+relationship AutoDetected_94d70421-969c-4267-909c-1f3382a48c4c
+	fromColumn: 'Frequency of repetition'.Product
+	toColumn: 'Failure %age'.Product
+
+relationship AutoDetected_d289ecb1-7378-4ecc-b53d-bbf31abae592
+	fromColumn: 'Frequency of repetition'.Sort
+	toColumn: 'Early / Late Life'.Sort
+
+relationship AutoDetected_7ac13999-e0c1-4d20-ae29-881b79b4cd55
+	fromColumn: 'Frequency of repetition'.Product
+	toColumn: 'Product Defect%'.Product
+
+relationship AutoDetected_a436f9c4-404e-4be2-892c-f8a6e96d6150
+	fromColumn: 'Defects Repetition Branch Wise'.Branch
+	toColumn: 'Stability index'.Branch
+
+relationship AutoDetected_04965ae0-17a1-4fd0-a85f-9366418a6751
+	fromColumn: Trend.Branch
+	toColumn: 'Stability index'.Branch
+
+relationship AutoDetected_ca68482f-c02e-4789-9289-c106f50d2722
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: P/N.Branch
+	toColumn: 'Stability index'.Branch
+
+relationship AutoDetected_3e04608b-b780-4c03-b8ee-0d35320326ae
+	fromColumn: 'Defects Repetition Branch Wise'.Sort
+	toColumn: 'Active/ Inactive Calls'.sort
+
+relationship AutoDetected_c5a23646-673c-43d4-8339-a0ca171f3560
+	fromColumn: Trend.Sort
+	toColumn: 'Active/ Inactive Calls'.sort
+
+relationship AutoDetected_70d6a9e4-32b1-4c47-b258-edb6c2b7f0e1
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Table.Defect
+	toColumn: 'ASC/DSC Defects'.Defect
+
+relationship AutoDetected_24e35405-b87a-4cd6-9c1e-629ca05f668a
+	fromColumn: 'Defects Repetition Branch Wise'.Defect
+	toColumn: 'ASC/DSC Defects'.Defect
+
+relationship AutoDetected_f56934ec-23e7-47b4-a2c9-bf0ac3e1387b
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'active aging'.Sort
+	toColumn: 'Active/ Inactive Calls'.sort
+
+relationship AutoDetected_d20a63c2-b5a1-4f3d-bdc1-0832b32ee785
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Open/hold defects'.Defect
+	toColumn: 'ASC/DSC Defects'.Defect
+

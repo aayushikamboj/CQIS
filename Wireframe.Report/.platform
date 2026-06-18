@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Wireframe"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6ec8ed12-bb8f-4fca-b9b0-f64a39a717c2"
+  }
+}

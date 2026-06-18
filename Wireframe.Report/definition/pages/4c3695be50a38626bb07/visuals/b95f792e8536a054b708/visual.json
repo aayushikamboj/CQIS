@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "b95f792e8536a054b708",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 3000,
+    "height": 99.3870323525496,
+    "width": 182.20955931300762,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sample"
+                    }
+                  },
+                  "Property": "Top Defect"
+                }
+              },
+              "queryRef": "Sample.Top Defect",
+              "nativeQueryRef": "Top Defect"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "ffcc255274971e4d054d"
+}

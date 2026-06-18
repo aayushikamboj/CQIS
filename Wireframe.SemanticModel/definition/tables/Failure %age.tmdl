@@ -1,0 +1,31 @@
+table 'Failure %age'
+	lineageTag: ce7903c8-4f88-47fc-97b9-d522bf0e2848
+
+	column Product
+		dataType: string
+		lineageTag: c691ee08-2b5e-48ee-ac54-3bde590acbff
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column %age
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: ad1afed7-0be8-4f5c-8618-ff6e789c32f2
+		summarizeBy: none
+		sourceColumn: %age
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Failure %age' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WcnZ0VtJRMtAzNDVRitWJVgpydQPzDSyMwfxgmLyBgRFYINwXIm+qFBsLAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Product = _t, #"%age" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Product", type text}, {"%age", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

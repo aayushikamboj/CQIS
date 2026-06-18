@@ -1,0 +1,182 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "5e938db4e33d0ce8b2d5",
+  "position": {
+    "x": 32.616082291705425,
+    "y": 159.45640231500431,
+    "z": 8000,
+    "height": 329.78483206057712,
+    "width": 739.29786527865633,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Active/ Inactive Calls"
+                    }
+                  },
+                  "Property": "Month-yy"
+                }
+              },
+              "queryRef": "Active/ Inactive Calls.Month-yy.Variation.Date Hierarchy.Year",
+              "nativeQueryRef": "Month-yy Year",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Active/ Inactive Calls"
+                        }
+                      },
+                      "Property": "Inactive"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Active/ Inactive Calls.Inactive)",
+              "nativeQueryRef": "Inactive",
+              "displayName": "Inactive"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Active/ Inactive Calls"
+                        }
+                      },
+                      "Property": "Active"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Active/ Inactive Calls.Active)",
+              "nativeQueryRef": "Active",
+              "displayName": "Active"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Active/ Inactive Calls"
+                  }
+                },
+                "Property": "Month-yy"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TopRight'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "y2Axis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,87 @@
+table 'svc engg'
+	lineageTag: 23ce9079-ac2f-4d4f-9e42-a8845abdd6c9
+
+	column 'SCV Engineer'
+		dataType: string
+		lineageTag: 877d2bd0-847c-46ab-8ceb-7a71cfda5073
+		summarizeBy: none
+		sourceColumn: SCV Engineer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Repeated Cases'
+		dataType: int64
+		formatString: 0
+		lineageTag: 86e07c0b-9aae-4f1f-b8d8-920c7eefc10b
+		summarizeBy: sum
+		sourceColumn: Repeated Cases
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Calls'
+		dataType: int64
+		formatString: 0
+		lineageTag: 12cb4bd4-9409-4e6f-9fb3-f9ad0677b678
+		summarizeBy: sum
+		sourceColumn: Total Calls
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'First Time Fix%'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b6e4c514-840c-4b9d-ad4a-a45456dc0cf0
+		summarizeBy: sum
+		sourceColumn: First Time Fix%
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FTF Calls' = [Total Calls]-'svc engg'[Repeated Cases]
+		formatString: 0
+		lineageTag: c8eac526-a6ac-43c4-9b0a-da6cd4ad9d38
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ccb47c8-805b-4998-87ec-9b030f2570a5
+		summarizeBy: sum
+		sourceColumn: Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hold
+		dataType: int64
+		formatString: 0
+		lineageTag: 622950f0-e763-41bd-90de-d5723a6c05a3
+		summarizeBy: sum
+		sourceColumn: Hold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Avg Resolution Time'
+		dataType: double
+		lineageTag: 2fd2b52d-f5e3-426e-b095-5e16d41dbdc3
+		summarizeBy: sum
+		sourceColumn: Avg Resolution Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'svc engg' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("RZDbCoQgEIZfRbyOSC1rLwcKtIPFmMtC9P6vsY7a7og/I+M3p+viuBt7sveEG/CKiyaKJGnq7nHJUbXkd3VxH2ZYmQ8nwmgACaGwGBIidLa+UCLjBCKcZpoOtqD1xoFjxEr61HaJbR8jTkahJCqxK3y2SBzgRouW4jqKzm32qhilindIaC45A/PM78GNCBn/zZSLalVOfL1SvZi8jAoYHFvClqds/4tRZbrUYFzTfX8B", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"SCV Engineer" = _t, #"Repeated Cases" = _t, #"Total Calls" = _t, #"First Time Fix%" = _t, Open = _t, Hold = _t, #"Avg Resolution Time" = _t]),
+				    #"Changed Type1" = Table.TransformColumnTypes(Source,{{"Open", Int64.Type}, {"Hold", Int64.Type}, {"Avg Resolution Time", type number}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Changed Type1",{{"SCV Engineer", type text}, {"Repeated Cases", Int64.Type}, {"Total Calls", Int64.Type}, {"First Time Fix%", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

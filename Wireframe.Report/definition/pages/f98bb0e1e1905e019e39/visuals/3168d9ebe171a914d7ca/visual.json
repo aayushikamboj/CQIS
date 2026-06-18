@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "3168d9ebe171a914d7ca",
+  "position": {
+    "x": 0,
+    "y": 0.82456191133579393,
+    "z": 6000,
+    "height": 99.3870323525496,
+    "width": 207.97656770070566,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sample"
+                    }
+                  },
+                  "Property": "Defects repeated within 7 Days"
+                }
+              },
+              "queryRef": "Sample.Defects repeated within 7 Days",
+              "nativeQueryRef": "Repeated within 7 Days",
+              "displayName": "Repeated within 7 Days"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sample"
+                  }
+                },
+                "Property": "Defects repeated within 7 Days"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "f67d91560ed1246069d1"
+}

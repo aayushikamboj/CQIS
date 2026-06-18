@@ -1,0 +1,71 @@
+table RNPs
+	lineageTag: 9a31909d-04f6-4e5b-8d2b-0dc2bc2c34c7
+
+	measure 'Total RNPs' = SUM(RNPs[Open])+SUM(RNPs[Closed])+SUM(RNPs[Returned])+SUM(RNPs[Hold])
+		formatString: 0
+		lineageTag: dcd2f5ca-fb0b-4225-bbbf-34267206b4da
+
+	measure 'FTF Failure%' = 260/780
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 3787466c-8643-4997-aaee-4266e61485f5
+
+	measure 'Parts Replacement%' = 0.612
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 4b11eb91-04f7-45a0-a086-4cfa5d3fe1cb
+
+	column 'Total RNP'
+		dataType: int64
+		formatString: 0
+		lineageTag: 366795d0-e890-4f64-9354-9261bc52ba3b
+		summarizeBy: sum
+		sourceColumn: Total RNP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b22219b-1eea-4fd6-81dc-f9e8bef81b01
+		summarizeBy: sum
+		sourceColumn: Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hold
+		dataType: int64
+		formatString: 0
+		lineageTag: c51e5af4-b007-41d6-a8be-df2273ed5cd1
+		summarizeBy: sum
+		sourceColumn: Hold
+
+		annotation SummarizationSetBy = Automatic
+
+	column Returned
+		dataType: int64
+		formatString: 0
+		lineageTag: 7695c871-66d0-43ca-9f17-ea486b34d989
+		summarizeBy: sum
+		sourceColumn: Returned
+
+		annotation SummarizationSetBy = Automatic
+
+	column Closed
+		dataType: int64
+		formatString: 0
+		lineageTag: 3fa420ae-8848-4166-849e-73f871ac22bb
+		summarizeBy: sum
+		sourceColumn: Closed
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RNPs = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMjQwUNJRMjMFEqYglimIZWmgFBsLAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Total RNP" = _t, Open = _t, Hold = _t, Returned = _t, Closed = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Total RNP", Int64.Type}, {"Open", Int64.Type}, {"Hold", Int64.Type}, {"Returned", Int64.Type}, {"Closed", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

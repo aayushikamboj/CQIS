@@ -1,0 +1,281 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 2095.7049214974154,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "RNPs",
+          "nodeLineageTag": "9a31909d-04f6-4e5b-8d2b-0dc2bc2c34c7",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 24
+          },
+          "nodeIndex": "RNP Number",
+          "nodeLineageTag": "ed9eca9e-dbaf-4dc8-aa8e-295874e80e9e",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 36
+          },
+          "nodeIndex": "Early / Late Life",
+          "nodeLineageTag": "54aeb040-a769-41d3-806c-f97fff0faef7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 36
+          },
+          "nodeIndex": "Failure %age",
+          "nodeLineageTag": "ce7903c8-4f88-47fc-97b9-d522bf0e2848",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 24
+          },
+          "nodeIndex": "Frequency of repetition",
+          "nodeLineageTag": "c26fed3b-f07d-4673-a8e2-6ea02e39dabb",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 36
+          },
+          "nodeIndex": "Table",
+          "nodeLineageTag": "7d150a6e-a075-4ee0-b632-24ac65b9b36d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 12
+          },
+          "nodeIndex": "svc engg",
+          "nodeLineageTag": "23ce9079-ac2f-4d4f-9e42-a8845abdd6c9",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 36
+          },
+          "nodeIndex": "Parts replacement",
+          "nodeLineageTag": "8e5b8f9f-4ebf-4419-ba26-c84ff5e55974",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 48
+          },
+          "nodeIndex": "Sample",
+          "nodeLineageTag": "41c2995a-779e-4485-8067-72f36b6076e1",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 12
+          },
+          "nodeIndex": "Defects Repetition Branch Wise",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2840,
+            "y": 24
+          },
+          "nodeIndex": "Product Defect%",
+          "nodeLineageTag": "f9936b4a-240a-44da-bec6-b382928a88be",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3124,
+            "y": 12
+          },
+          "nodeIndex": "Trend",
+          "nodeLineageTag": "15b3dd0a-9bfe-42ec-9cb3-9761d931f7ad",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2558.5053204435421,
+            "y": 501.09767494235308
+          },
+          "nodeIndex": "Stability index",
+          "nodeLineageTag": "160c240d-54be-4420-a077-2babab000cac",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3408,
+            "y": 238.54883747117651
+          },
+          "nodeIndex": "P/N",
+          "nodeLineageTag": "838070aa-1a33-4433-8e1f-6659be485255",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3692,
+            "y": 238.54883747117651
+          },
+          "nodeIndex": "Active/ Inactive Calls",
+          "nodeLineageTag": "fc6c172c-1f0f-4acb-a25e-b39ba8e46219",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976,
+            "y": 250.54883747117651
+          },
+          "nodeIndex": "ASC/DSC",
+          "nodeLineageTag": "e76e5fd8-4643-4098-96b7-bdb4e028d3f0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4260,
+            "y": 238.54883747117651
+          },
+          "nodeIndex": "Branch wise ASC/DSC",
+          "nodeLineageTag": "7f30629c-94ae-4042-afb2-d2d85f0ef828",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4544,
+            "y": 238.54883747117651
+          },
+          "nodeIndex": "ASC/DSC Defects",
+          "nodeLineageTag": "d99b199e-6895-4127-8209-0eace047b9cd",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4828,
+            "y": 226.54883747117651
+          },
+          "nodeIndex": "active aging",
+          "nodeLineageTag": "1c820cbe-204a-441b-929d-cc770b0838bf",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5112,
+            "y": 214.54883747117651
+          },
+          "nodeIndex": "Open/hold defects",
+          "nodeLineageTag": "8677b716-d4d2-4ae6-8125-93869fb8e446",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 79.553182037699926,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

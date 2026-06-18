@@ -1,0 +1,57 @@
+table 'Product Defect%'
+	lineageTag: f9936b4a-240a-44da-bec6-b382928a88be
+
+	column Product
+		dataType: string
+		lineageTag: 02bec02d-a089-487e-9dcb-f4a6efb4cdc2
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Top Defect'
+		dataType: string
+		lineageTag: 9f4e57f1-03fe-4ece-bf39-b942e5f1f9e2
+		summarizeBy: none
+		sourceColumn: Top Defect
+
+		annotation SummarizationSetBy = Automatic
+
+	column %age
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b30f6759-6fbb-4af3-9ffb-fc5326f5baa3
+		summarizeBy: none
+		sourceColumn: %age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vs Prev Month'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: bd932f1b-1453-4416-bb6c-a263bdb1d7ae
+		summarizeBy: none
+		sourceColumn: Vs Prev Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column check = if([%age]>[Vs Prev Month],1,BLANK())
+		formatString: 0
+		lineageTag: 2a206bfc-8f13-4555-b740-a159fe2c0c4a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Product Defect%' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WcnZ0VtJR8stXcM7Pz8nMSwdyTA30TAxUgQwTAz1LM1WlWJ1opSBXN6CAS2JuYnpqCkjKQs8YrMbUTM/IFKImGGxUcElpcraCZ3FxaSqQZ2ygZ2AEUmdooGcKNSvcF2xjZnEqXJmpqZ4B2DhDUz0LkLJYAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Product = _t, #"Top Defect" = _t, #"%age" = _t, #"Vs Prev Month" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Product", type text}, {"Top Defect", type text}, {"%age", Percentage.Type}, {"Vs Prev Month", Percentage.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

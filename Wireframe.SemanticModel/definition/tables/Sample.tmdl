@@ -1,0 +1,69 @@
+table Sample
+	lineageTag: 41c2995a-779e-4485-8067-72f36b6076e1
+
+	measure 'Total Cases' = 1300
+		formatString: 0
+		lineageTag: a5d8eb9d-7a51-4510-bb32-2c5011d21498
+
+	measure 'Repeat Defect Rate%' = 0.43
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b6828192-e083-41b1-af70-1e2c51e7d669
+
+	measure 'Top Defect' = "No Cooling"
+		lineageTag: 03beffca-9c67-4b16-85cf-b56892b79dcd
+
+	measure 'Defects repeated >4 times' = 520
+		formatString: 0
+		lineageTag: fab404eb-05d6-4e77-91a7-b23361d6b1aa
+
+	measure 'Defects repeated within 7 Days' = 476
+		formatString: 0
+		lineageTag: d12179c1-a20d-4cfa-bcfe-b50ca43f42d6
+
+	measure 'Avg Repeat Count' = 3
+		formatString: 0
+		lineageTag: 393be659-7c33-4031-b627-6892df46cee3
+
+	measure 'Avg Closing Time(Days)' = 3
+		formatString: 0
+		lineageTag: 862e559a-edf5-4bbd-8bb6-58d18372701a
+
+	measure Active = 746
+		formatString: 0
+		lineageTag: 73615cf4-5e8c-4a52-be4e-c5959b5b9950
+
+	measure Inactive = 1300-[Active]
+		formatString: 0
+		lineageTag: 2918e925-09e0-4cc1-8054-4085a2199b67
+
+	measure 'Open Calls' = 425
+		formatString: 0
+		lineageTag: a653952c-0083-4cf5-8eee-75b559d90f70
+
+	measure 'Hold Calls' = [Active]-[Open Calls]
+		formatString: 0
+		lineageTag: 4da5529e-3823-4aba-a993-9df72fcdee91
+
+	measure 'Total overall calls' = 2670
+		formatString: 0
+		lineageTag: 3b26a24f-510d-48e9-9cd4-855a9919e002
+
+	column Column1
+		dataType: string
+		lineageTag: 7b0cc4e2-be5b-4edd-b4c5-a02df1e1465b
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sample = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

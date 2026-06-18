@@ -1,0 +1,33 @@
+table Table
+	lineageTag: 7d150a6e-a075-4ee0-b632-24ac65b9b36d
+
+	column Defect
+		dataType: string
+		lineageTag: 040ab65f-69ee-4b00-afa9-19dfc30bddc1
+		summarizeBy: none
+		sourceColumn: Defect
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: int64
+		formatString: 0
+		lineageTag: 0dd4a45e-975b-4879-a0e7-9b7586da6a94
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Table = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8stXSM7Pz8nMS9d39jAwVXAtKsovUtJRsjBVitWJVgouKU3OVsgsLi5NBQqaG4AFXRJzE9NTU4ACphBV4YklqUUKOamJ2UBxkDBQXSwA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Defect = _t, Value = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Defect", type text}, {"Value", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

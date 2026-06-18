@@ -1,0 +1,44 @@
+table 'Early / Late Life'
+	lineageTag: 54aeb040-a769-41d3-806c-f97fff0faef7
+
+	column Aging
+		dataType: string
+		lineageTag: 47881d2f-73c5-4b7f-8648-50b9fb7bb83c
+		summarizeBy: none
+		sourceColumn: Aging
+		sortByColumn: Sort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: int64
+		formatString: 0
+		lineageTag: d07f3558-d11c-424c-b2a6-246b1caa5b67
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sort
+		dataType: string
+		lineageTag: bacd33c9-6598-4ad3-a463-f00fea53d8a3
+		summarizeBy: none
+		sourceColumn: Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Early / Late Life' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMtA1NlBwSawsVtJRMjEDEoZKsTrRSsYGupZwcTMLIGEEFrc00DW0gEuYmgMJY7AEUFTX2MwUJmMMkjEBy8SUGhgYpyLJmRqBCKXYWAA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Aging = _t, Value = _t, Sort = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Aging", type text}, {"Value", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

@@ -1,0 +1,54 @@
+table 'Active/ Inactive Calls'
+	lineageTag: fc6c172c-1f0f-4acb-a25e-b39ba8e46219
+
+	column Month-yy
+		dataType: string
+		lineageTag: 13ee1e78-40a8-4ee0-bdb7-d789a236c721
+		summarizeBy: none
+		sourceColumn: Month-yy
+		sortByColumn: sort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Active
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ebb3476-51c5-4249-864b-0ede747637e3
+		summarizeBy: sum
+		sourceColumn: Active
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inactive
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e14250c-576b-4e4f-abf4-e806409f3484
+		summarizeBy: sum
+		sourceColumn: Inactive
+
+		annotation SummarizationSetBy = Automatic
+
+	column sort
+		dataType: int64
+		formatString: 0
+		lineageTag: e1a1aba9-2ad9-434d-beb4-c6f04fdec8a2
+		summarizeBy: none
+		sourceColumn: sort
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Active/ Inactive Calls' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("Nc4xCoAwDEDRu2Sug22SpqOLg+AJSgcFVxHBwdubtHV5BH5LkjMszzl4BgcRTSJURyguw7q9LQmTij6ovqbpultCMpOMaui/eoqSVE5iz2qaj70lEpMx2lzTsv1nBNuVgp3BUMoH", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Month-yy" = _t, Active = _t, Inactive = _t, sort = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Month-yy", type text}, {"Active", Int64.Type}, {"Inactive", Int64.Type}, {"sort", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

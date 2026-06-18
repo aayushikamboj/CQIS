@@ -1,0 +1,50 @@
+table 'Branch wise ASC/DSC'
+	lineageTag: 7f30629c-94ae-4042-afb2-d2d85f0ef828
+
+	column Column1
+		dataType: string
+		lineageTag: 83246c84-b904-49d8-9cfa-82b84bfaf5f1
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 283b60af-c17a-4a0d-9211-3ef781a7fbbd
+		summarizeBy: sum
+		sourceColumn: ASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column DSC
+		dataType: int64
+		formatString: 0
+		lineageTag: 531fd77c-71f8-489c-87c8-ab60178efc5e
+		summarizeBy: sum
+		sourceColumn: DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column Closed
+		dataType: string
+		lineageTag: 65feee51-195a-4b56-af7b-2f1d81e63243
+		summarizeBy: none
+		sourceColumn: Closed
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Branch wise ASC/DSC' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8nL0VNJRMjMFEqZmQMLcQilWJ1rJ0cMXxAEJm4AIIwOwsHtoEEi1MZAwNoMoAAn7hoJUm4IUmhmA5CzBws4eriBhS5AhYMJIKTYWAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t, ASC = _t, DSC = _t, Closed = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"ASC", Int64.Type}, {"DSC", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

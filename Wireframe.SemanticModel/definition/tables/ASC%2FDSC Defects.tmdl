@@ -1,0 +1,40 @@
+table 'ASC/DSC Defects'
+	lineageTag: d99b199e-6895-4127-8209-0eace047b9cd
+
+	column Defect
+		dataType: string
+		lineageTag: a0271bbc-c8e6-4d6a-a505-0ebb0db0ddf2
+		summarizeBy: none
+		sourceColumn: Defect
+
+		annotation SummarizationSetBy = Automatic
+
+	column ASC
+		dataType: int64
+		formatString: 0
+		lineageTag: fae284f4-8d40-4dce-a97e-5627eb2e9f45
+		summarizeBy: none
+		sourceColumn: ASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column DSC
+		dataType: int64
+		formatString: 0
+		lineageTag: b4210d28-a77d-4bab-a3fb-ac940c3ff12c
+		summarizeBy: none
+		sourceColumn: DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'ASC/DSC Defects' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8svPLE5V8CwuLk1V0lEyMwYSpmZKsTogGQXn/PyczLx0iBhQ1gIs4ZKYm5iemgIUMDcESRmBRd0TixV8UhOzgVIgQZBBJhCZ4JLS5Gy4FSYWQMLYXCk2FgA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Defect = _t, ASC = _t, DSC = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Defect", type text}, {"ASC", Int64.Type}, {"DSC", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

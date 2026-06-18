@@ -1,0 +1,52 @@
+table 'Frequency of repetition'
+	lineageTag: c26fed3b-f07d-4673-a8e2-6ea02e39dabb
+
+	column Product
+		dataType: string
+		lineageTag: aa7f3f35-a2a8-4aa9-a2b5-bf08b302649f
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column Aging
+		dataType: string
+		lineageTag: 2de2cde8-59e3-4ff2-9a6b-18286b25ebdc
+		summarizeBy: none
+		sourceColumn: Aging
+		sortByColumn: Sort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: int64
+		formatString: 0
+		lineageTag: 32550f52-c21a-4a34-bd2a-2a768aa20e86
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sort
+		dataType: string
+		lineageTag: 9f1f10b6-fa4c-4ef1-a6f0-2750b0fcac26
+		summarizeBy: none
+		sourceColumn: Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Frequency of repetition' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("bZCxEsIgDIZfxWMud0mBdvZq3bqUwaF2cPAJPAff3hJqkoILx+ULfPmzLGY4D6YxaDGcLo/Pa7v7kApmbRgG6+BHsduOVlEH1vPbFlJF0fsbwD2lAdPnnhrm8VqYEdi8Q20WcYYHcc/eDEsvDZa9sUqMnr3xT+KexbFOTIGcolXijs23qRDLpjPSWrESO0plzQQr5552/QI=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Product = _t, Aging = _t, Value = _t, Sort = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Product", type text}, {"Aging", type text}, {"Value", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

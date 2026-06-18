@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "2e1410f3026605ed8105",
+  "position": {
+    "x": 438.03914259086679,
+    "y": 29.448009585940621,
+    "z": 2000,
+    "height": 99.3870323525496,
+    "width": 154.60205032618828,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNPs"
+                    }
+                  },
+                  "Property": "Total RNPs"
+                }
+              },
+              "queryRef": "RNPs.Total RNPs",
+              "nativeQueryRef": "Total RNPs"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "RNPs"
+                  }
+                },
+                "Property": "Total RNPs"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

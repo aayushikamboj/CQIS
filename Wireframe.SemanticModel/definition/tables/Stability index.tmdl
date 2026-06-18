@@ -1,0 +1,34 @@
+table 'Stability index'
+	lineageTag: 160c240d-54be-4420-a077-2babab000cac
+
+	column Branch
+		dataType: string
+		lineageTag: 405a13e5-5792-456f-afed-a2dec59319fd
+		summarizeBy: none
+		sourceColumn: Branch
+
+		annotation SummarizationSetBy = Automatic
+
+	column Index
+		dataType: double
+		lineageTag: 68a3259e-71da-4922-b4ff-9333b2c6ec38
+		summarizeBy: sum
+		sourceColumn: Index
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Stability index' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8g31VdJRstQzNVGK1YlW8nL0BHINDfUswVz30CCwrBmY5+gBUmuiZwHmOXu4gpSa6BmbK8XGAgA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Branch = _t, Index = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Branch", type text}, {"Index", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

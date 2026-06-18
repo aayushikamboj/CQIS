@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "1dd695da6e7ce0709c09",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 7000,
+    "height": 101.2275329516709,
+    "width": 187.73106111037148,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNPs"
+                    }
+                  },
+                  "Property": "FTF Failure%"
+                }
+              },
+              "queryRef": "RNPs.FTF Failure%",
+              "nativeQueryRef": "FTF Failure%"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "RNPs"
+                  }
+                },
+                "Property": "FTF Failure%"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "7f78ab237153a2a6807d"
+}
