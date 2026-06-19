@@ -1,10 +1,6 @@
 table RNPs
 	lineageTag: 9a31909d-04f6-4e5b-8d2b-0dc2bc2c34c7
 
-	measure 'Total RNPs' = SUM(RNPs[Open])+SUM(RNPs[Closed])+SUM(RNPs[Returned])+SUM(RNPs[Hold])
-		formatString: 0
-		lineageTag: dcd2f5ca-fb0b-4225-bbbf-34267206b4da
-
 	measure 'FTF Failure%' = 260/780
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 3787466c-8643-4997-aaee-4266e61485f5
@@ -12,6 +8,32 @@ table RNPs
 	measure 'Parts Replacement%' = 0.612
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 4b11eb91-04f7-45a0-a086-4cfa5d3fe1cb
+
+	measure 'total rnps val' = 2543
+		formatString: 0
+		lineageTag: bc8388c2-7b9f-4062-8f8f-19745492f873
+
+	measure RNPS = 7862
+		formatString: 0
+		lineageTag: f7f4b08f-b1c3-4444-bd19-91f8b0944fff
+
+	measure 'Open calls  status' = ```
+			2485 
+			```
+		formatString: 0
+		lineageTag: f5c0779a-694a-4c5e-b6dd-d818a7a7725d
+
+	measure 'Hold Status Call' = 1056
+		formatString: 0
+		lineageTag: bd9a1043-0189-428c-bd74-40892ce8170a
+
+	measure 'closed status calls' = 2974
+		formatString: 0
+		lineageTag: f06fe438-1155-43a9-9ff2-497c1732f401
+
+	measure 'Returned status call' = 1347
+		formatString: 0
+		lineageTag: e073d886-3264-433a-95aa-24ea9fadcb3d
 
 	column 'Total RNP'
 		dataType: int64

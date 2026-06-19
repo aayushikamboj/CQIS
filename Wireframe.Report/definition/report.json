@@ -9,6 +9,15 @@
         "page": "2.3.1"
       },
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Custom10970134188654079.json",
+      "reportVersionAtImport": {
+        "visual": "2.9.0",
+        "report": "3.3.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
     }
   },
   "objects": {
@@ -48,6 +57,32 @@
           "name": "Fluent2-CY26SU05",
           "path": "BaseThemes/Fluent2-CY26SU05.json",
           "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Custom10970134188654079.json",
+          "path": "Custom10970134188654079.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "Frame_6_(6)2174601725606935.png",
+          "path": "Frame_6_(6)2174601725606935.png",
+          "type": "Image"
+        },
+        {
+          "name": "Frame_7_(8)2588363219900661.png",
+          "path": "Frame_7_(8)2588363219900661.png",
+          "type": "Image"
+        },
+        {
+          "name": "Frame_9_(25)5624227009775367.png",
+          "path": "Frame_9_(25)5624227009775367.png",
+          "type": "Image"
         }
       ]
     }

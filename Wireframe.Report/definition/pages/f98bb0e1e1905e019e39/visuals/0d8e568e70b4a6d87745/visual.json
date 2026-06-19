@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "0d8e568e70b4a6d87745",
   "position": {
-    "x": 375.36231884057975,
-    "y": 140.57971014492756,
-    "z": 4000,
-    "height": 47.826086956521742,
-    "width": 86.956521739130437,
-    "tabOrder": 3000
+    "x": 616.56770070563175,
+    "y": 371.78112102250037,
+    "z": 8000,
+    "height": 29.448009585940621,
+    "width": 57.055518572759958,
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "card",
@@ -81,7 +81,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9.5D"
+                  "Value": "10D"
                 }
               }
             },
@@ -89,6 +89,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
                 }
               }
             }
@@ -135,11 +142,44 @@
             }
           }
         }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "95bbfe7330d2b6744288",
   "filterConfig": {
     "filters": [
       {

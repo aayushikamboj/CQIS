@@ -1,0 +1,17 @@
+{
+  "name": "Custom",
+  "textClasses": {
+    "label": {
+      "fontFace": "Arial"
+    },
+    "callout": {
+      "fontFace": "Arial"
+    },
+    "title": {
+      "fontFace": "Arial"
+    },
+    "header": {
+      "fontFace": "Arial"
+    }
+  }
+}
