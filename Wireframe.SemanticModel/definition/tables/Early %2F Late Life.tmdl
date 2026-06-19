@@ -33,7 +33,7 @@ table 'Early / Late Life'
 		mode: import
 		source =
 				let
-				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMtA1NlBwSawsVtJRMjEDEoZKsTrRSsYGupZwcTMLIGEEFrc00DW0gEuYmgMJY7AEUFTX2MwUJmMMkjEBy8SUGhgYpyLJmRqBCKXYWAA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Aging = _t, Value = _t, Sort = _t]),
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("Tcu7DYAwDIThVZDrWLpg59WzRUhBwQSIgu1xIhHR/MV9uloJLFi247nIUYRaPTVXScBlguZiXQcUsM9TgsIqQ2xmieGjlFK/DtpvQM4fRg39Ta29", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Aging = _t, Value = _t, Sort = _t]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Aging", type text}, {"Value", Int64.Type}})
 				in
 				    #"Changed Type"

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "c10448e03906d81001b8",
   "position": {
-    "x": 312.88510185061909,
-    "y": 0,
-    "z": 1000,
-    "height": 99.3870323525496,
-    "width": 160.12355212355214,
-    "tabOrder": 0
+    "x": 264.89361702127661,
+    "y": 132.97872340425533,
+    "z": 0,
+    "height": 68.085106382978722,
+    "width": 254.2553191489362,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "card",
@@ -17,23 +17,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "RNPs"
-                        }
-                      },
-                      "Property": "Total RNP"
+                    "SourceRef": {
+                      "Entity": "RNPs"
                     }
                   },
-                  "Function": 0
+                  "Property": "total rnps val"
                 }
               },
-              "queryRef": "Sum(RNPs.Total RNP)",
-              "nativeQueryRef": "Total Cases",
-              "displayName": "Total Cases"
+              "queryRef": "RNPs.total rnps val",
+              "nativeQueryRef": "total rnps val"
             }
           ]
         }
@@ -42,18 +36,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "RNPs"
-                      }
-                    },
-                    "Property": "Total RNP"
+                  "SourceRef": {
+                    "Entity": "RNPs"
                   }
                 },
-                "Function": 0
+                "Property": "total rnps val"
               }
             },
             "direction": "Descending"
@@ -61,6 +50,76 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "24D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }

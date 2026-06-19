@@ -1,0 +1,35 @@
+table 'Page Navigation'
+	lineageTag: c1224540-178a-407e-ad5e-ed26535b6a19
+
+	column Column1
+		dataType: string
+		lineageTag: 0646b48b-76c8-45ca-b981-c48e2cd0c81f
+		summarizeBy: none
+		sourceColumn: Column1
+		sortByColumn: sort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column sort
+		dataType: string
+		lineageTag: bd605c29-4678-4ef2-b697-22ae6708e635
+		summarizeBy: none
+		sourceColumn: sort
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Page Navigation' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8sjPTVXSUTJUitWJVgpOLcpMzFHwK81NSi1SCEpNLi0qSs1LBikwAitwTC7JLEvV98xLBDMUnBNzcoqBssZg2aDUgtTEktQUBZfUtNTkkmKFtKL8XAWnosS85AygIhOl2FgA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t, sort = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

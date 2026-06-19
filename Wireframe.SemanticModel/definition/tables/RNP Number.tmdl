@@ -27,7 +27,7 @@ table 'RNP Number'
 
 		annotation SummarizationSetBy = Automatic
 
-	column Pending = 680- [Number]
+	column Pending = 7862- [Number]
 		formatString: 0
 		lineageTag: 804f5eb3-78df-445d-8d42-4df3aca66e0f
 		summarizeBy: sum
@@ -38,10 +38,12 @@ table 'RNP Number'
 		mode: import
 		source =
 				let
-				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlQI8gtQ0lEyMTIAkgZ6ZobmSrE60UpGUHFDqLihuRlY3BgqbmEKETYyBQvHlBoYGKfCJE0hkgYWBhZKsbEA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Type = _t, Number = _t, #"%age" = _t]),
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlII8gtQ0lEytjAyAFIGeiYWphZKsTrRSsZQGSMzC1OwjLGJoSlYJqbUwMA4FSZvaGxqDpY3NDcyU4qNBQA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Type = _t, Number = _t, #"%age" = _t]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Type", type text}, {"Number", Int64.Type}, {"%age", type number}})
 				in
 				    #"Changed Type"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 
