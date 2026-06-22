@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "c3ae5bb7c3d75acd9708",
+  "position": {
+    "x": 1642.1052631578948,
+    "y": 576.31578947368416,
+    "z": 49009,
+    "height": 48.684210526315788,
+    "width": 247.36842105263159,
+    "tabOrder": 48009
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "PCB + Evaporator",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#db0202"
+                    }
+                  },
+                  {
+                    "value": " dominate failures — Together they account for 64% of all defects.",
+                    "textStyle": {
+                      "color": "#000000"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

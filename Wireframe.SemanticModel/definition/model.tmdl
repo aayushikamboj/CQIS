@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["RNPs","RNP Number","Early / Late Life","Failure %age","Frequency of repetition","Table","svc engg","Parts replacement","Sample","Defects Repetition Branch Wise","Product Defect%","Trend","Stability index","P/N","Active/ Inactive Calls","ASC/DSC","Branch wise ASC/DSC","ASC/DSC Defects","active aging","Open/hold defects","Page Navigation"]
+annotation PBI_QueryOrder = ["RNPs","RNP Number","Early / Late Life","Failure %age","Frequency of repetition","Table","svc engg","Parts replacement","Sample","Defects Repetition Branch Wise","Product Defect%","Trend","Stability index","P/N","Active/ Inactive Calls","ASC/DSC","Branch wise ASC/DSC","ASC/DSC Defects","active aging","Open/hold defects","Page Navigation","Open/Hold KPI","Warranty Type KPI","Active SVC KPI","Failing component","State city master","Month wise summary","Sub-product","Service call Aging","Engineer performance"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -33,6 +33,15 @@ ref table 'ASC/DSC Defects'
 ref table 'active aging'
 ref table 'Open/hold defects'
 ref table 'Page Navigation'
+ref table 'Open/Hold KPI'
+ref table 'Warranty Type KPI'
+ref table 'Active SVC KPI'
+ref table 'Failing component'
+ref table 'State city master'
+ref table 'Month wise summary'
+ref table Sub-product
+ref table 'Service call Aging'
+ref table 'Engineer performance'
 
 ref cultureInfo en-US
 

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "Fluent2-CY26SU05",
@@ -40,7 +40,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "false"
+                "Value": "true"
               }
             }
           }
@@ -65,6 +65,11 @@
       "type": "RegisteredResources",
       "items": [
         {
+          "name": "72d616d9-eac4-41c2-aa9d-2c60ac9470868448873744.png",
+          "path": "72d616d9-eac4-41c2-aa9d-2c60ac9470868448873744.png",
+          "type": "Image"
+        },
+        {
           "name": "Custom10970134188654079.json",
           "path": "Custom10970134188654079.json",
           "type": "CustomTheme"
@@ -82,6 +87,56 @@
         {
           "name": "Frame_9_(25)5624227009775367.png",
           "path": "Frame_9_(25)5624227009775367.png",
+          "type": "Image"
+        },
+        {
+          "name": "Gemini_Generated_Image_2lnuk124536171426162985.png",
+          "path": "Gemini_Generated_Image_2lnuk124536171426162985.png",
+          "type": "Image"
+        },
+        {
+          "name": "Gemini_Generated_Image_6bioxm68809793672367742.png",
+          "path": "Gemini_Generated_Image_6bioxm68809793672367742.png",
+          "type": "Image"
+        },
+        {
+          "name": "Gemini_Generated_Image_9yvxn399602363249963288.png",
+          "path": "Gemini_Generated_Image_9yvxn399602363249963288.png",
+          "type": "Image"
+        },
+        {
+          "name": "Gemini_Generated_Image_ejry0ce4596077126865852.png",
+          "path": "Gemini_Generated_Image_ejry0ce4596077126865852.png",
+          "type": "Image"
+        },
+        {
+          "name": "Gemini_Generated_Image_l8ce6yl9505795823683065.png",
+          "path": "Gemini_Generated_Image_l8ce6yl9505795823683065.png",
+          "type": "Image"
+        },
+        {
+          "name": "map-removebg-preview2074000116739313.png",
+          "path": "map-removebg-preview2074000116739313.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-06-20_183816683487897653567.png",
+          "path": "Screenshot_2026-06-20_183816683487897653567.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-06-20_1903389989894561589302.png",
+          "path": "Screenshot_2026-06-20_1903389989894561589302.png",
+          "type": "Image"
+        },
+        {
+          "name": "services-removebg-preview35845760472711374.png",
+          "path": "services-removebg-preview35845760472711374.png",
+          "type": "Image"
+        },
+        {
+          "name": "Untitled_(40)6014336511311326.png",
+          "path": "Untitled_(40)6014336511311326.png",
           "type": "Image"
         }
       ]

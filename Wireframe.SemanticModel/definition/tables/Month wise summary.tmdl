@@ -1,0 +1,62 @@
+table 'Month wise summary'
+	lineageTag: e96d902c-beb1-4a15-9cbe-58bd7ecaac88
+
+	column 'Manufacturing Month'
+		dataType: string
+		lineageTag: da7ad7f2-7f20-4ac7-aadf-fa329c2f1ec9
+		summarizeBy: none
+		sourceColumn: Manufacturing Month
+		sortByColumn: Sort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Counts'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6183e5b7-06ba-43b4-b62b-2ecce423af50
+		summarizeBy: sum
+		sourceColumn: Total Counts
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Avg Age failure'
+		dataType: int64
+		formatString: 0
+		lineageTag: 37e3e456-be7d-448f-b110-6a7666342587
+		summarizeBy: sum
+		sourceColumn: Avg Age failure
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No of days '
+		dataType: int64
+		formatString: 0
+		lineageTag: 14620a51-a006-4778-a5e0-dbccfb96bbef
+		summarizeBy: sum
+		sourceColumn: "No of days "
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sort
+		dataType: string
+		lineageTag: cb6fcfe9-0e37-4c5c-8512-f08b98e49e89
+		summarizeBy: none
+		sourceColumn: Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Month wise summary' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8krMU9JRMjY2AJJGQGxqASQMlWJ1opXcUpNAggYgKVOQqLEpWBFIzjexCCRiBJIzAbNAmo3Bco4FYDlTA7BJQFFDsCKItkq4kWApiNkgKa9SkEMMTcyBJFga5BAzpdhYAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Manufacturing Month" = _t, #"Total Counts" = _t, #"Avg Age failure" = _t, #"No of days " = _t, Sort = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Manufacturing Month", type text}, {"Total Counts", Int64.Type}, {"Avg Age failure", Int64.Type}, {"No of days ", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

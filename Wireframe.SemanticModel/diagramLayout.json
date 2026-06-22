@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 0
+        "x": 6236.2054794520545,
+        "y": 289.48603949342146
       },
       "nodes": [
         {
@@ -279,10 +279,126 @@
             "width": 234
           },
           "zIndex": 20
+        },
+        {
+          "location": {
+            "x": 5396,
+            "y": 463.48603949342146
+          },
+          "nodeIndex": "Open/Hold KPI",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5680,
+            "y": 475.48603949342146
+          },
+          "nodeIndex": "Warranty Type KPI",
+          "nodeLineageTag": "318866cb-b781-4bb5-8080-36bc21841201",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5964,
+            "y": 475.48603949342146
+          },
+          "nodeIndex": "Active SVC KPI",
+          "nodeLineageTag": "ee41a7e1-02d5-4991-b698-9904c4f9c154",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6248,
+            "y": 475.48603949342146
+          },
+          "nodeIndex": "Failing component",
+          "nodeLineageTag": "3bb0daa4-78c2-419c-a171-4f5911ba731e",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6532,
+            "y": 439.48603949342146
+          },
+          "nodeIndex": "State city master",
+          "nodeLineageTag": "2193d597-7bb6-45d0-a6cc-ce93adfc97e4",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6816,
+            "y": 451.48603949342146
+          },
+          "nodeIndex": "Month wise summary",
+          "nodeLineageTag": "e96d902c-beb1-4a15-9cbe-58bd7ecaac88",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7100,
+            "y": 475.48603949342146
+          },
+          "nodeIndex": "Sub-product",
+          "nodeLineageTag": "6207c8b7-58de-4111-9746-bae4a6bfdcb1",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7384,
+            "y": 475.48603949342146
+          },
+          "nodeIndex": "Service call Aging",
+          "nodeLineageTag": "a80a1c56-85ba-4206-83b7-f593e4082cf7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7668,
+            "y": 439.48603949342146
+          },
+          "nodeIndex": "Engineer performance",
+          "nodeLineageTag": "b2f285cb-4699-48ae-8b57-16c183f87b0c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
-      "zoomValue": 140.93331472388994,
+      "zoomValue": 125.14285714285714,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

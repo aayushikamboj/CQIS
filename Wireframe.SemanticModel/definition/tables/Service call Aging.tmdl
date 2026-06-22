@@ -1,0 +1,66 @@
+table 'Service call Aging'
+	lineageTag: a80a1c56-85ba-4206-83b7-f593e4082cf7
+
+	column Days
+		dataType: string
+		lineageTag: a655cbd8-0c1c-4e69-b434-738a24d148e5
+		summarizeBy: none
+		sourceColumn: Days
+		sortByColumn: Sort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: int64
+		formatString: 0
+		lineageTag: 735a5292-5952-4b02-be7d-c294ff094eba
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sort
+		dataType: string
+		lineageTag: 6c7eaaba-9f13-4f6b-bf35-b54587661cb0
+		summarizeBy: none
+		sourceColumn: Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b2ca64e-2d6e-4a63-b836-e9aaf35c926c
+		summarizeBy: sum
+		sourceColumn: Open
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hold
+		dataType: int64
+		formatString: 0
+		lineageTag: 066a37ca-e6dc-4785-8290-ba70dbb2dcc5
+		summarizeBy: sum
+		sourceColumn: Hold
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Service call Aging' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("LU7LDUMxCNuFc5D4JCSZJc3xjfD2L7g92BLYGJ9DwoMaqUtxYs8kd7rtULDW2npZrAxzJceEqspawo66SIwy9/iJwYZIq7ueWAgeUE3ZkIl8FFgbM+TPK+IPHI5i9cFE/kXv/QI=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Days = _t, Value = _t, Sort = _t, Open = _t, Hold = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Days", type text}, {"Value", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

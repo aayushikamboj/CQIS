@@ -1,0 +1,62 @@
+table 'Engineer performance'
+	lineageTag: b2f285cb-4699-48ae-8b57-16c183f87b0c
+
+	column Name
+		dataType: string
+		lineageTag: 0a0d5d99-e8e0-4c6f-a2ff-398e2a8fe954
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RNP Count'
+		dataType: int64
+		formatString: 0
+		lineageTag: 582a0c01-ee04-4b14-b80b-6adf40723bde
+		summarizeBy: sum
+		sourceColumn: RNP Count
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: int64
+		formatString: 0
+		lineageTag: 8a4c77f5-a351-407f-88ed-fa61e385772e
+		summarizeBy: sum
+		sourceColumn: Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hold
+		dataType: int64
+		formatString: 0
+		lineageTag: f38eff96-fff3-435e-8203-3eaeba0a2d74
+		summarizeBy: sum
+		sourceColumn: Hold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Avg Open Days'
+		dataType: double
+		formatString: 0
+		lineageTag: 0d0b4699-2e0f-46de-9173-f773467ed168
+		summarizeBy: sum
+		sourceColumn: Avg Open Days
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	partition 'Engineer performance' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("NY1BDoMgEEWvQlgbIqDW7U+IxViokdJFDfe/RmcQF/9lMu9n5jxlwrHgwE/ABzjZST0yekIdHkrL0lHPw68OvLKE+fazstVj2xACRML6yiwMQzMopr9KEdGJZ94/uJ9MlIEbWpnaCW/Ph1x7wp5PmbHaiC+S2EVuyraYSZbyBw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Name = _t, #"RNP Count" = _t, Open = _t, Hold = _t, #"Avg Open Days" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Name", type text}, {"RNP Count", Int64.Type}, {"Open", Int64.Type}, {"Hold", Int64.Type}, {"Avg Open Days", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

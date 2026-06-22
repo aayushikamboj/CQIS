@@ -1,0 +1,33 @@
+table 'Failing component'
+	lineageTag: 3bb0daa4-78c2-419c-a171-4f5911ba731e
+
+	column Components
+		dataType: string
+		lineageTag: 2933efe8-23e2-461f-9d92-36b277d37765
+		summarizeBy: none
+		sourceColumn: Components
+
+		annotation SummarizationSetBy = Automatic
+
+	column Count
+		dataType: int64
+		formatString: 0
+		lineageTag: 1cca06ba-a3fe-461c-a13a-299ab18b1abe
+		summarizeBy: sum
+		sourceColumn: Count
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Failing component' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45Wci1LLMgvSizJL1LSUTIyMVCK1YlW8i8tScnPL1IIcHYCihqam4FFPfOQBY1MoYLFpTlQ7eaGYCHffCBXwcnHxRkoZmauFBsLAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Components = _t, Count = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Components", type text}, {"Count", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

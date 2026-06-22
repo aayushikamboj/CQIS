@@ -54,3 +54,26 @@ relationship AutoDetected_d20a63c2-b5a1-4f3d-bdc1-0832b32ee785
 	fromColumn: 'Open/hold defects'.Defect
 	toColumn: 'ASC/DSC Defects'.Defect
 
+relationship AutoDetected_448d636c-af98-4301-82ef-baffd9075dbc
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Early / Late Life'.Sort
+	toColumn: 'Month wise summary'.Sort
+
+relationship AutoDetected_d82b3c89-e321-409e-991a-2348752aef5d
+	isActive: false
+	fromColumn: 'Frequency of repetition'.Sort
+	toColumn: 'Month wise summary'.Sort
+
+relationship AutoDetected_49e13820-ec74-46a7-907d-5858f933e682
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Page Navigation'.sort
+	toColumn: 'Month wise summary'.Sort
+
+relationship AutoDetected_064663dd-c463-4985-a082-fad7a97c35f6
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Service call Aging'.Sort
+	toColumn: 'Month wise summary'.Sort
+

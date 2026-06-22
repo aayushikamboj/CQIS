@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "adb591ba78db8457e250",
+  "position": {
+    "x": 1641.5105281325509,
+    "y": 407.99171556782881,
+    "z": 49006,
+    "height": 81.121159820503976,
+    "width": 248.1353123921298,
+    "tabOrder": 48006
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Jan 2026",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#db0202"
+                    }
+                  },
+                  {
+                    "value": " manufacturing batch has the maximum warranty claims, suggesting a possible quality concern originating from there.",
+                    "textStyle": {
+                      "color": "#000000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

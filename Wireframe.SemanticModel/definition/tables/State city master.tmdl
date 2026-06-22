@@ -1,0 +1,114 @@
+table 'State city master'
+	lineageTag: 2193d597-7bb6-45d0-a6cc-ce93adfc97e4
+
+	measure 'Highest Failing State' =
+			
+			VAR T =
+			    TOPN(
+			        1,
+			        SUMMARIZE(
+			            'State city master',
+			            'State city master'[Column1],
+			            "Failure", SUM('State city master'[Custom])
+			        ),
+			        [Failure],
+			        DESC
+			    )
+			RETURN
+			MAXX(T, [Column1])
+		formatString: 0
+		lineageTag: ef2879fc-a69f-4678-bd36-b93a840b6046
+
+	measure Failing% = Calculate(SUM('State city master'[Custom]),'State city master'[Column1]="Delhi")
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: c1a09969-f5c9-4e16-b6a6-f7ad043a8262
+
+	column Column1
+		dataType: string
+		lineageTag: 1af1af39-6de5-4352-a994-3f97b6ab5972
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 5c2afdfe-9fd9-4649-85d5-3d40317d0630
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total
+		dataType: int64
+		formatString: 0
+		lineageTag: 6750294f-9f9e-4643-9777-d477ed20333f
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: int64
+		formatString: 0
+		lineageTag: 2fbfe498-9256-4b91-9681-b2c32a689d87
+		summarizeBy: sum
+		sourceColumn: Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hold
+		dataType: int64
+		formatString: 0
+		lineageTag: c02d7a2c-b757-43ac-bdf9-bb445dca1844
+		summarizeBy: sum
+		sourceColumn: Hold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Failure %'
+		dataType: string
+		lineageTag: c9516a63-daa9-46f5-bf22-6e4c796284fb
+		summarizeBy: none
+		sourceColumn: Failure %
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Text Before Delimiter'
+		dataType: double
+		lineageTag: e3d1e5e5-4939-4931-832e-41137df840c9
+		summarizeBy: sum
+		sourceColumn: Text Before Delimiter
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Custom
+		dataType: double
+		lineageTag: 4e81fca5-7a68-4d19-bf90-7e294cfff79b
+		summarizeBy: sum
+		sourceColumn: Custom
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'State city master' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("hZNNb4JAEIb/ijHpzWxYPkSPVVuaNml6Nx5GISyKYAaw6b/vzMiqLaKXYXbzzNfOy3I5fC5igzD4QoiTygxHdAFFDYcGyfdDMm7AxuWj0k/D1ehG0Czb7eBY5g35nrbG4UAV9sTMTVbXZcl1PN/WmfJJOT0hL1DVg6iM4QiY0TmQUhMy2pP+gjuB6SVOQsQ4Us9vw6oK9jwN4CGp4c4sLTiHjQF8zC0AEYr0mhGnC2ZrbFJA87jJqIT8AAj95CLJDU9rv57Pr+uGXDmUEEdN/qKfyffgjN+eKWq2VLVmpZh9EsMaYs7HTBDaTYyV26H3mOScV58p3rq2O7siSYGcU3O72mlVobsNzKCAakdyNfIKrhWRqNaOdoXTrpqNsdXFOJK5lfUb4A+lpKtX0okdrU9kFzpqMIWy4Lk9a+Q91Pg/evHkj3Kso9W0g2aVaOsh+G5guxXU9605CaGDfkBGj5XL7i112i53uvoF", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t, Column2 = _t, Total = _t, Open = _t, Hold = _t, #"Failure %" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}, {"Total", Int64.Type}, {"Open", Int64.Type}, {"Hold", Int64.Type}}),
+				    #"Inserted Text Before Delimiter" = Table.AddColumn(#"Changed Type", "Text Before Delimiter", each Text.BeforeDelimiter([#"Failure %"], "%"), type text),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Inserted Text Before Delimiter",{{"Text Before Delimiter", type number}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type1", "Custom", each [Text Before Delimiter]/100)
+				in
+				    #"Added Custom"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

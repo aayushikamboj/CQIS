@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "fc0c57de181a30e506a6",
+  "position": {
+    "x": 1641.5105281325509,
+    "y": 792.12426648256826,
+    "z": 49012,
+    "height": 59.647911632723513,
+    "width": 248.1353123921298,
+    "tabOrder": 48012
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Power / Short Circuit",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#db0202"
+                    }
+                  },
+                  {
+                    "value": " faults are the leading complaint type with 40% of all complaints.",
+                    "textStyle": {
+                      "color": "#000000"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
