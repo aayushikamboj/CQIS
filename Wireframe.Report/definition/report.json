@@ -65,14 +65,14 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "72d616d9-eac4-41c2-aa9d-2c60ac9470868448873744.png",
-          "path": "72d616d9-eac4-41c2-aa9d-2c60ac9470868448873744.png",
-          "type": "Image"
-        },
-        {
           "name": "Custom10970134188654079.json",
           "path": "Custom10970134188654079.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "Frame_3_(4)4603894020548728.png",
+          "path": "Frame_3_(4)4603894020548728.png",
+          "type": "Image"
         },
         {
           "name": "Frame_6_(6)2174601725606935.png",
@@ -120,23 +120,8 @@
           "type": "Image"
         },
         {
-          "name": "Screenshot_2026-06-20_183816683487897653567.png",
-          "path": "Screenshot_2026-06-20_183816683487897653567.png",
-          "type": "Image"
-        },
-        {
-          "name": "Screenshot_2026-06-20_1903389989894561589302.png",
-          "path": "Screenshot_2026-06-20_1903389989894561589302.png",
-          "type": "Image"
-        },
-        {
           "name": "services-removebg-preview35845760472711374.png",
           "path": "services-removebg-preview35845760472711374.png",
-          "type": "Image"
-        },
-        {
-          "name": "Untitled_(40)6014336511311326.png",
-          "path": "Untitled_(40)6014336511311326.png",
           "type": "Image"
         }
       ]

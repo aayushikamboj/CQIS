@@ -77,3 +77,8 @@ relationship AutoDetected_064663dd-c463-4985-a082-fad7a97c35f6
 	fromColumn: 'Service call Aging'.Sort
 	toColumn: 'Month wise summary'.Sort
 
+relationship 5c48b363-a757-43a6-9c7c-36d987d98f9f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Date.Date
+	toColumn: LocalDateTable_bbe31cef-eaa3-475f-bb49-3c56ac782521.Date
+

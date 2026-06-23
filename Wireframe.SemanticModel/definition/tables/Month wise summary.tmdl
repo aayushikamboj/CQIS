@@ -51,7 +51,7 @@ table 'Month wise summary'
 		mode: import
 		source =
 				let
-				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8krMU9JRMjY2AJJGQGxqASQMlWJ1opXcUpNAggYgKVOQqLEpWBFIzjexCCRiBJIzAbNAmo3Bco4FYDlTA7BJQFFDsCKItkq4kWApiNkgKa9SkEMMTcyBJFga5BAzpdhYAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Manufacturing Month" = _t, #"Total Counts" = _t, #"Avg Age failure" = _t, #"No of days " = _t, Sort = _t]),
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8krMU9JRMjY2AJJGQGxqASQMlWJ1opXcUpNAggYgKVOQqLEpWBFIzjexCCRiBJIzAbNAmo3Bco4FYDlTA7BJQL0QRRBtlXAjQVImpmCzQVJepSCHGJqYA0mQNNhFZkqxsQA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Manufacturing Month" = _t, #"Total Counts" = _t, #"Avg Age failure" = _t, #"No of days " = _t, Sort = _t]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Manufacturing Month", type text}, {"Total Counts", Int64.Type}, {"Avg Age failure", Int64.Type}, {"No of days ", Int64.Type}})
 				in
 				    #"Changed Type"
