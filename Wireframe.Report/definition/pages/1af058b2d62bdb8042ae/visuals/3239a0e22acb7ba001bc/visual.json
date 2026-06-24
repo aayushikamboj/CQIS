@@ -7,7 +7,7 @@
     "z": 29000,
     "height": 229.33333333333334,
     "width": 426.66666666666669,
-    "tabOrder": 30000
+    "tabOrder": 31000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -161,14 +161,14 @@
                           "min": {
                             "color": {
                               "Literal": {
-                                "Value": "'#D24975'"
+                                "Value": "'#D2DA4F'"
                               }
                             }
                           },
                           "max": {
                             "color": {
                               "Literal": {
-                                "Value": "'#872141'"
+                                "Value": "'#de6a73'"
                               }
                             }
                           },

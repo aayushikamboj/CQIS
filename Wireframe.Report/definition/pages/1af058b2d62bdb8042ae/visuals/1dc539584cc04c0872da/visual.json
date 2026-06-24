@@ -7,7 +7,7 @@
     "z": 24000,
     "height": 221.89023127373144,
     "width": 470.02554366586128,
-    "tabOrder": 25000
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -215,7 +215,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }
@@ -315,7 +315,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#DF9503'"
+                      "Value": "'#F4C465'"
                     }
                   }
                 }
@@ -333,7 +333,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#BB1A4C'"
+                      "Value": "'#DE6A73'"
                     }
                   }
                 }

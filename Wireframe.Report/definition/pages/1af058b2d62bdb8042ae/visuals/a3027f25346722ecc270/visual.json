@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "a3027f25346722ecc270",
   "position": {
-    "x": 270,
+    "x": 272.5,
     "y": 780,
     "z": 40000,
     "height": 132.5,
-    "width": 1323.75,
-    "tabOrder": 35000
+    "width": 1315.8333333333335,
+    "tabOrder": 36000
   },
   "visual": {
     "visualType": "tableEx",
@@ -111,7 +111,8 @@
                 }
               },
               "queryRef": "RNP >180.Model Code",
-              "nativeQueryRef": "Model Code"
+              "nativeQueryRef": "Model",
+              "displayName": "Model"
             },
             {
               "field": {
@@ -197,26 +198,21 @@
                 }
               }
             },
-            "backColor": {
+            "fontColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#9F0C3A'"
+                      "Value": "'#A50042'"
                     }
                   }
                 }
               }
             },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
                 }
               }
             }
@@ -433,13 +429,69 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "266.62499403953507D"
+                  "Value": "237.4173008807387D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "RNP >180.Service Centre"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "124.57859306159983D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNP >180.Model Code"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "158.87500305991725D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNP >180.Engineer Name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "132.41668063156465D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNP >180.City"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "123.33333975538162D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNP >180.State"
           }
         }
       ],
@@ -449,7 +501,64 @@
             "rowPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "3D"
+                  "Value": "4D"
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "gridVerticalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#A59C9C'"
+                    }
+                  }
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#A59C9C'"
+                    }
+                  }
+                }
+              }
+            },
+            "outlineWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -500,52 +609,7 @@
           }
         },
         {
-          "properties": {
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Conditional": {
-                      "Cases": [
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 2,
-                              "Left": {
-                                "Aggregation": {
-                                  "Expression": {
-                                    "Column": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "RNP >180"
-                                        }
-                                      },
-                                      "Property": "Days Open"
-                                    }
-                                  },
-                                  "Function": 0
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "180D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#FB8484'"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -614,6 +678,57 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#A59C9C'"
+                    }
+                  }
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

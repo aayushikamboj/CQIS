@@ -4,9 +4,10 @@
   "position": {
     "x": 0,
     "y": 0,
-    "z": 43013,
+    "z": 0,
     "height": 25.490196078431371,
-    "width": 76.960784313725483
+    "width": 76.960784313725483,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "shape",
@@ -75,8 +76,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#FDC3D8'"
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
                     }
                   }
                 }

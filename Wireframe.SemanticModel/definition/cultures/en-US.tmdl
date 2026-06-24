@@ -12559,6 +12559,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "Model": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -13064,9 +13074,823 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "date.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
+			    "ASC_DSC_defect_has_open_hold_defect": {
+			      "Binding": {
+			        "ConceptualEntity": "ASC/DSC Defects"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ASC_DSC_defect": {
+			          "Target": {
+			            "Entity": "ASC_DSC_defect"
+			          }
+			        },
+			        "open_hold_defect": {
+			          "Target": {
+			            "Entity": "open_hold_defect"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ASC_DSC_defect"
+			            },
+			            "Object": {
+			              "Role": "open_hold_defect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ASC_DSC_defects_have_open_hold_defects"
+			        }
+			      ]
+			    },
+			    "ASC_DSC_defect_has_table": {
+			      "Binding": {
+			        "ConceptualEntity": "ASC/DSC Defects"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ASC_DSC_defect": {
+			          "Target": {
+			            "Entity": "ASC_DSC_defect"
+			          }
+			        },
+			        "table": {
+			          "Target": {
+			            "Entity": "table"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ASC_DSC_defect"
+			            },
+			            "Object": {
+			              "Role": "table"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ASC_DSC_defects_have_tables"
+			        }
+			      ]
+			    },
+			    "active__inactive_call_has_active_aging": {
+			      "Binding": {
+			        "ConceptualEntity": "Active/ Inactive Calls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "active__inactive_call": {
+			          "Target": {
+			            "Entity": "active__inactive_call"
+			          }
+			        },
+			        "active_aging": {
+			          "Target": {
+			            "Entity": "active_aging"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "active__inactive_call"
+			            },
+			            "Object": {
+			              "Role": "active_aging"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "active__inactive_calls_have_active_aging"
+			        }
+			      ]
+			    },
+			    "p_n_has_stability_index": {
+			      "Binding": {
+			        "ConceptualEntity": "P/N"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "p_n": {
+			          "Target": {
+			            "Entity": "p_n"
+			          }
+			        },
+			        "stability_index": {
+			          "Target": {
+			            "Entity": "stability_index"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "p_n"
+			            },
+			            "Object": {
+			              "Role": "stability_index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p_Ns_have_stability_indices"
+			        }
+			      ]
+			    },
+			    "stability_index_has_p_n": {
+			      "Binding": {
+			        "ConceptualEntity": "Stability index"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stability_index": {
+			          "Target": {
+			            "Entity": "stability_index"
+			          }
+			        },
+			        "p_n": {
+			          "Target": {
+			            "Entity": "p_n"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stability_index"
+			            },
+			            "Object": {
+			              "Role": "p_n"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stability_indices_have_p_Ns"
+			        }
+			      ]
+			    },
+			    "trend_has_active__inactive_call": {
+			      "Binding": {
+			        "ConceptualEntity": "Trend"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "trend": {
+			          "Target": {
+			            "Entity": "trend"
+			          }
+			        },
+			        "active__inactive_call": {
+			          "Target": {
+			            "Entity": "active__inactive_call"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "trend"
+			            },
+			            "Object": {
+			              "Role": "active__inactive_call"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trends_have_active__inactive_calls"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "active__inactive_call"
+			            },
+			            "Object": {
+			              "Role": "trend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "active__inactive_calls_have_trends"
+			        }
+			      ]
+			    },
+			    "trend_has_stability_index": {
+			      "Binding": {
+			        "ConceptualEntity": "Trend"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "trend": {
+			          "Target": {
+			            "Entity": "trend"
+			          }
+			        },
+			        "stability_index": {
+			          "Target": {
+			            "Entity": "stability_index"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "trend"
+			            },
+			            "Object": {
+			              "Role": "stability_index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trends_have_stability_indices"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stability_index"
+			            },
+			            "Object": {
+			              "Role": "trend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stability_indices_have_trends"
+			        }
+			      ]
+			    },
+			    "defects_repetition_branch_wise_has_ASC_DSC_defect": {
+			      "Binding": {
+			        "ConceptualEntity": "Defects Repetition Branch Wise"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "defects_repetition_branch_wise": {
+			          "Target": {
+			            "Entity": "defects_repetition_branch_wise"
+			          }
+			        },
+			        "ASC_DSC_defect": {
+			          "Target": {
+			            "Entity": "ASC_DSC_defect"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "defects_repetition_branch_wise"
+			            },
+			            "Object": {
+			              "Role": "ASC_DSC_defect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defects_repetition_branch_wise_have_ASC_DSC_defects"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ASC_DSC_defect"
+			            },
+			            "Object": {
+			              "Role": "defects_repetition_branch_wise"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ASC_DSC_defects_have_defects_repetition_branch_wise"
+			        }
+			      ]
+			    },
+			    "defects_repetition_branch_wise_has_active__inactive_call": {
+			      "Binding": {
+			        "ConceptualEntity": "Defects Repetition Branch Wise"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "defects_repetition_branch_wise": {
+			          "Target": {
+			            "Entity": "defects_repetition_branch_wise"
+			          }
+			        },
+			        "active__inactive_call": {
+			          "Target": {
+			            "Entity": "active__inactive_call"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "defects_repetition_branch_wise"
+			            },
+			            "Object": {
+			              "Role": "active__inactive_call"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defects_repetition_branch_wise_have_active__inactive_calls"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "active__inactive_call"
+			            },
+			            "Object": {
+			              "Role": "defects_repetition_branch_wise"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "active__inactive_calls_have_defects_repetition_branch_wise"
+			        }
+			      ]
+			    },
+			    "defects_repetition_branch_wise_has_stability_index": {
+			      "Binding": {
+			        "ConceptualEntity": "Defects Repetition Branch Wise"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "defects_repetition_branch_wise": {
+			          "Target": {
+			            "Entity": "defects_repetition_branch_wise"
+			          }
+			        },
+			        "stability_index": {
+			          "Target": {
+			            "Entity": "stability_index"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "defects_repetition_branch_wise"
+			            },
+			            "Object": {
+			              "Role": "stability_index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defects_repetition_branch_wise_have_stability_indices"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stability_index"
+			            },
+			            "Object": {
+			              "Role": "defects_repetition_branch_wise"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stability_indices_have_defects_repetition_branch_wise"
+			        }
+			      ]
+			    },
+			    "table_has_ASC_DSC_defect": {
+			      "Binding": {
+			        "ConceptualEntity": "Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "table": {
+			          "Target": {
+			            "Entity": "table"
+			          }
+			        },
+			        "ASC_DSC_defect": {
+			          "Target": {
+			            "Entity": "ASC_DSC_defect"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "table"
+			            },
+			            "Object": {
+			              "Role": "ASC_DSC_defect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tables_have_ASC_DSC_defects"
+			        }
+			      ]
+			    },
+			    "frequency_of_repetition_has_product_defect": {
+			      "Binding": {
+			        "ConceptualEntity": "Frequency of repetition"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "frequency_of_repetition": {
+			          "Target": {
+			            "Entity": "frequency_of_repetition"
+			          }
+			        },
+			        "product_defect": {
+			          "Target": {
+			            "Entity": "product_defect"
+			          },
+			          "Nouns": [
+			            {
+			              "product": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "frequency_of_repetition"
+			            },
+			            "Object": {
+			              "Role": "product_defect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "frequency_of_repetition_have_product_defect"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "product_defect"
+			            },
+			            "Object": {
+			              "Role": "frequency_of_repetition"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "product_defect_have_frequency_of_repetition"
+			        }
+			      ]
+			    },
 			    "frequency_of_repetition_has_early___late_life": {
 			      "Binding": {
 			        "ConceptualEntity": "Frequency of repetition"
@@ -13196,6 +14020,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "early___late_lives_have_month_wise_summaries"
+			        }
+			      ]
+			    },
+			    "date_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.date": {
+			          "Target": {
+			            "Entity": "date.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_dates"
 			        }
 			      ]
 			    },
@@ -17882,487 +18739,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "frequency_of_repetition_has_product_defect": {
-			      "Binding": {
-			        "ConceptualEntity": "Frequency of repetition"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "frequency_of_repetition": {
-			          "Target": {
-			            "Entity": "frequency_of_repetition"
-			          }
-			        },
-			        "product_defect": {
-			          "Target": {
-			            "Entity": "product_defect"
-			          },
-			          "Nouns": [
-			            {
-			              "product": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "frequency_of_repetition"
-			            },
-			            "Object": {
-			              "Role": "product_defect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "frequency_of_repetition_have_product_defect"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product_defect"
-			            },
-			            "Object": {
-			              "Role": "frequency_of_repetition"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "product_defect_have_frequency_of_repetition"
-			        }
-			      ]
-			    },
-			    "table_has_ASC_DSC_defect": {
-			      "Binding": {
-			        "ConceptualEntity": "Table"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "table": {
-			          "Target": {
-			            "Entity": "table"
-			          }
-			        },
-			        "ASC_DSC_defect": {
-			          "Target": {
-			            "Entity": "ASC_DSC_defect"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "table"
-			            },
-			            "Object": {
-			              "Role": "ASC_DSC_defect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "tables_have_ASC_DSC_defects"
-			        }
-			      ]
-			    },
-			    "defects_repetition_branch_wise_has_stability_index": {
-			      "Binding": {
-			        "ConceptualEntity": "Defects Repetition Branch Wise"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "defects_repetition_branch_wise": {
-			          "Target": {
-			            "Entity": "defects_repetition_branch_wise"
-			          }
-			        },
-			        "stability_index": {
-			          "Target": {
-			            "Entity": "stability_index"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "defects_repetition_branch_wise"
-			            },
-			            "Object": {
-			              "Role": "stability_index"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "defects_repetition_branch_wise_have_stability_indices"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "stability_index"
-			            },
-			            "Object": {
-			              "Role": "defects_repetition_branch_wise"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "stability_indices_have_defects_repetition_branch_wise"
-			        }
-			      ]
-			    },
-			    "defects_repetition_branch_wise_has_active__inactive_call": {
-			      "Binding": {
-			        "ConceptualEntity": "Defects Repetition Branch Wise"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "defects_repetition_branch_wise": {
-			          "Target": {
-			            "Entity": "defects_repetition_branch_wise"
-			          }
-			        },
-			        "active__inactive_call": {
-			          "Target": {
-			            "Entity": "active__inactive_call"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "defects_repetition_branch_wise"
-			            },
-			            "Object": {
-			              "Role": "active__inactive_call"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "defects_repetition_branch_wise_have_active__inactive_calls"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "active__inactive_call"
-			            },
-			            "Object": {
-			              "Role": "defects_repetition_branch_wise"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "active__inactive_calls_have_defects_repetition_branch_wise"
-			        }
-			      ]
-			    },
-			    "defects_repetition_branch_wise_has_ASC_DSC_defect": {
-			      "Binding": {
-			        "ConceptualEntity": "Defects Repetition Branch Wise"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "defects_repetition_branch_wise": {
-			          "Target": {
-			            "Entity": "defects_repetition_branch_wise"
-			          }
-			        },
-			        "ASC_DSC_defect": {
-			          "Target": {
-			            "Entity": "ASC_DSC_defect"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "defects_repetition_branch_wise"
-			            },
-			            "Object": {
-			              "Role": "ASC_DSC_defect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "defects_repetition_branch_wise_have_ASC_DSC_defects"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "ASC_DSC_defect"
-			            },
-			            "Object": {
-			              "Role": "defects_repetition_branch_wise"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ASC_DSC_defects_have_defects_repetition_branch_wise"
-			        }
-			      ]
-			    },
-			    "trend_has_stability_index": {
-			      "Binding": {
-			        "ConceptualEntity": "Trend"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "trend": {
-			          "Target": {
-			            "Entity": "trend"
-			          }
-			        },
-			        "stability_index": {
-			          "Target": {
-			            "Entity": "stability_index"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "trend"
-			            },
-			            "Object": {
-			              "Role": "stability_index"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trends_have_stability_indices"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "stability_index"
-			            },
-			            "Object": {
-			              "Role": "trend"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "stability_indices_have_trends"
-			        }
-			      ]
-			    },
-			    "trend_has_active__inactive_call": {
-			      "Binding": {
-			        "ConceptualEntity": "Trend"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "trend": {
-			          "Target": {
-			            "Entity": "trend"
-			          }
-			        },
-			        "active__inactive_call": {
-			          "Target": {
-			            "Entity": "active__inactive_call"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "trend"
-			            },
-			            "Object": {
-			              "Role": "active__inactive_call"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trends_have_active__inactive_calls"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "active__inactive_call"
-			            },
-			            "Object": {
-			              "Role": "trend"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "active__inactive_calls_have_trends"
-			        }
-			      ]
-			    },
-			    "stability_index_has_p_n": {
-			      "Binding": {
-			        "ConceptualEntity": "Stability index"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "stability_index": {
-			          "Target": {
-			            "Entity": "stability_index"
-			          }
-			        },
-			        "p_n": {
-			          "Target": {
-			            "Entity": "p_n"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "stability_index"
-			            },
-			            "Object": {
-			              "Role": "p_n"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "stability_indices_have_p_Ns"
-			        }
-			      ]
-			    },
-			    "p_n_has_stability_index": {
-			      "Binding": {
-			        "ConceptualEntity": "P/N"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "p_n": {
-			          "Target": {
-			            "Entity": "p_n"
-			          }
-			        },
-			        "stability_index": {
-			          "Target": {
-			            "Entity": "stability_index"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "p_n"
-			            },
-			            "Object": {
-			              "Role": "stability_index"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "p_Ns_have_stability_indices"
-			        }
-			      ]
-			    },
-			    "active__inactive_call_has_active_aging": {
-			      "Binding": {
-			        "ConceptualEntity": "Active/ Inactive Calls"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "active__inactive_call": {
-			          "Target": {
-			            "Entity": "active__inactive_call"
-			          }
-			        },
-			        "active_aging": {
-			          "Target": {
-			            "Entity": "active_aging"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "active__inactive_call"
-			            },
-			            "Object": {
-			              "Role": "active_aging"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "active__inactive_calls_have_active_aging"
-			        }
-			      ]
-			    },
-			    "ASC_DSC_defect_has_table": {
-			      "Binding": {
-			        "ConceptualEntity": "ASC/DSC Defects"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "ASC_DSC_defect": {
-			          "Target": {
-			            "Entity": "ASC_DSC_defect"
-			          }
-			        },
-			        "table": {
-			          "Target": {
-			            "Entity": "table"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "ASC_DSC_defect"
-			            },
-			            "Object": {
-			              "Role": "table"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ASC_DSC_defects_have_tables"
-			        }
-			      ]
-			    },
-			    "ASC_DSC_defect_has_open_hold_defect": {
-			      "Binding": {
-			        "ConceptualEntity": "ASC/DSC Defects"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "ASC_DSC_defect": {
-			          "Target": {
-			            "Entity": "ASC_DSC_defect"
-			          }
-			        },
-			        "open_hold_defect": {
-			          "Target": {
-			            "Entity": "open_hold_defect"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "ASC_DSC_defect"
-			            },
-			            "Object": {
-			              "Role": "open_hold_defect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ASC_DSC_defects_have_open_hold_defects"
-			        }
-			      ]
-			    },
 			    "active_aging_has_active__inactive_call": {
 			      "Binding": {
 			        "ConceptualEntity": "active aging"
@@ -18591,6 +18967,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "service_call_aging_have_month_wise_summaries"
+			        }
+			      ]
+			    },
+			    "date_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date.date": {
+			          "Target": {
+			            "Entity": "date.date"
+			          }
+			        },
+			        "date.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date.date"
+			            },
+			            "Object": {
+			              "Role": "date.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "date_date_date_hierarchy_has_date_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date.date.date_hierarchy"
+			          }
+			        },
+			        "date.date.year": {
+			          "Target": {
+			            "Entity": "date.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "date_date_date_hierarchy_has_date_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date.date.date_hierarchy"
+			          }
+			        },
+			        "date.date.quarter": {
+			          "Target": {
+			            "Entity": "date.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "date_date_date_hierarchy_has_date_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date.date.date_hierarchy"
+			          }
+			        },
+			        "date.date.month": {
+			          "Target": {
+			            "Entity": "date.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "date_date_date_hierarchy_has_date_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "date.date.date_hierarchy"
+			          }
+			        },
+			        "date.date.day": {
+			          "Target": {
+			            "Entity": "date.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "date.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
 			        }
 			      ]
 			    }

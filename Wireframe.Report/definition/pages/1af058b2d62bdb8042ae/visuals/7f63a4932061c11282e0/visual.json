@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "7f63a4932061c11282e0",
   "position": {
-    "x": 956,
-    "y": 530.66666666666663,
+    "x": 976.54320987654319,
+    "y": 530.8641975308642,
     "z": 28000,
-    "height": 197.33333333333334,
-    "width": 629.33333333333337,
-    "tabOrder": 29000
+    "height": 197.53086419753086,
+    "width": 608.64197530864192,
+    "tabOrder": 30000
   },
   "visual": {
     "visualType": "lineChart",
@@ -87,7 +87,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#5E491F'"
+                      "Value": "'#E0BD63'"
                     }
                   }
                 }
@@ -105,7 +105,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#CE2357'"
+                      "Value": "'#DB5982'"
                     }
                   }
                 }

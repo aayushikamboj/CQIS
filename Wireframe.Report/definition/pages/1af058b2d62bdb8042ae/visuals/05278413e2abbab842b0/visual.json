@@ -7,7 +7,7 @@
     "z": 34000,
     "height": 208,
     "width": 673.33333333333337,
-    "tabOrder": 34000
+    "tabOrder": 35000
   },
   "visual": {
     "visualType": "columnChart",
@@ -187,6 +187,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "invertAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -272,7 +279,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#8D4747'"
+                      "Value": "'#E8DEAF'"
                     }
                   }
                 }
@@ -290,7 +297,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#BC2D51'"
+                      "Value": "'#DE6A73'"
                     }
                   }
                 }
@@ -335,7 +342,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }
@@ -361,7 +368,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }
