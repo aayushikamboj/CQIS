@@ -13934,42 +13934,460 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
-			    }
-			  },
-			  "Relationships": {
-			    "month_wise_summary_has_service_call_aging": {
-			      "Binding": {
-			        "ConceptualEntity": "Month wise summary"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "month_wise_summary": {
-			          "Target": {
-			            "Entity": "month_wise_summary"
-			          }
-			        },
-			        "service_call_aging": {
-			          "Target": {
-			            "Entity": "service_call_aging"
-			          }
+			    },
+			    "defect_code_analysis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Defect Code analysis"
 			        }
 			      },
-			      "Phrasings": [
+			      "State": "Generated",
+			      "Terms": [
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "month_wise_summary"
+			          "defect code analysis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "analysis": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "code analysis": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "defect id analysis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
 			            },
-			            "Object": {
-			              "Role": "service_call_aging"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_wise_summaries_have_service_call_aging"
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "id analysis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "defect key analysis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "key analysis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "defect code examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "defect code investigation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "defect code scrutiny": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "defect code breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "defect code enquiry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "defect code inquiry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
 			        }
 			      ]
 			    },
+			    "defect_code_analysis.column_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Defect Code analysis",
+			          "ConceptualProperty": "Column1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Defect Code": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "defect_code_analysis.cy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Defect Code analysis",
+			          "ConceptualProperty": "CY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "defect_code_analysis.py": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Defect Code analysis",
+			          "ConceptualProperty": "PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "py": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "primary_synotom_analysis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Primary Synotom Analysis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "primary synotom analysis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "primary synotom examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom investigation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom scrutiny": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom enquiry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom inquiry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom exploration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom consideration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "primary synotom study": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "primary_synotom_analysis.primary_symptom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Primary Synotom Analysis",
+			          "ConceptualProperty": "Primary Symptom"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "primary symptom": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "symptom": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "primary indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "primary sign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "primary indicator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "indicator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "primary_synotom_analysis.total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Primary Synotom Analysis",
+			          "ConceptualProperty": "Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "failing_component.part_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Failing component",
+			          "ConceptualProperty": "Part No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "part no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "part number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
 			    "month_wise_summary_has_page_navigation": {
 			      "Binding": {
 			        "ConceptualEntity": "Month wise summary"
@@ -14791,6 +15209,204 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "early___late_lives_have_month_wise_summaries"
+			        }
+			      ]
+			    },
+			    "failing_component_has_part_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Failing component"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "failing_component": {
+			          "Target": {
+			            "Entity": "failing_component"
+			          }
+			        },
+			        "failing_component.part_no": {
+			          "Target": {
+			            "Entity": "failing_component.part_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "failing_component"
+			            },
+			            "Object": {
+			              "Role": "failing_component.part_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "failing_component_have_part_noes"
+			        }
+			      ]
+			    },
+			    "primary_synotom_analysis_has_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Primary Synotom Analysis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "primary_synotom_analysis": {
+			          "Target": {
+			            "Entity": "primary_synotom_analysis"
+			          }
+			        },
+			        "primary_synotom_analysis.total": {
+			          "Target": {
+			            "Entity": "primary_synotom_analysis.total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "primary_synotom_analysis"
+			            },
+			            "Object": {
+			              "Role": "primary_synotom_analysis.total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "primary_synotom_analyses_have_totals"
+			        }
+			      ]
+			    },
+			    "primary_synotom_analysis_has_primary_symptom": {
+			      "Binding": {
+			        "ConceptualEntity": "Primary Synotom Analysis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "primary_synotom_analysis": {
+			          "Target": {
+			            "Entity": "primary_synotom_analysis"
+			          }
+			        },
+			        "primary_synotom_analysis.primary_symptom": {
+			          "Target": {
+			            "Entity": "primary_synotom_analysis.primary_symptom"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "primary_synotom_analysis"
+			            },
+			            "Object": {
+			              "Role": "primary_synotom_analysis.primary_symptom"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "primary_synotom_analyses_have_primary_symptoms"
+			        }
+			      ]
+			    },
+			    "defect_code_analysis_has_py": {
+			      "Binding": {
+			        "ConceptualEntity": "Defect Code analysis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "defect_code_analysis": {
+			          "Target": {
+			            "Entity": "defect_code_analysis"
+			          }
+			        },
+			        "defect_code_analysis.py": {
+			          "Target": {
+			            "Entity": "defect_code_analysis.py"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "defect_code_analysis"
+			            },
+			            "Object": {
+			              "Role": "defect_code_analysis.py"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defect_code_analyses_have_pies"
+			        }
+			      ]
+			    },
+			    "defect_code_analysis_has_cy": {
+			      "Binding": {
+			        "ConceptualEntity": "Defect Code analysis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "defect_code_analysis": {
+			          "Target": {
+			            "Entity": "defect_code_analysis"
+			          }
+			        },
+			        "defect_code_analysis.cy": {
+			          "Target": {
+			            "Entity": "defect_code_analysis.cy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "defect_code_analysis"
+			            },
+			            "Object": {
+			              "Role": "defect_code_analysis.cy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defect_code_analyses_have_cy"
+			        }
+			      ]
+			    },
+			    "defect_code_analysis_has_column_1": {
+			      "Binding": {
+			        "ConceptualEntity": "Defect Code analysis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "defect_code_analysis": {
+			          "Target": {
+			            "Entity": "defect_code_analysis"
+			          }
+			        },
+			        "defect_code_analysis.column_1": {
+			          "Target": {
+			            "Entity": "defect_code_analysis.column_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "defect_code_analysis"
+			            },
+			            "Object": {
+			              "Role": "defect_code_analysis.column_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defect_code_analyses_have_column_1"
 			        }
 			      ]
 			    },
@@ -19729,6 +20345,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "state_city_masters_are_in_states"
+			        }
+			      ]
+			    },
+			    "month_wise_summary_has_service_call_aging": {
+			      "Binding": {
+			        "ConceptualEntity": "Month wise summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month_wise_summary": {
+			          "Target": {
+			            "Entity": "month_wise_summary"
+			          }
+			        },
+			        "service_call_aging": {
+			          "Target": {
+			            "Entity": "service_call_aging"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month_wise_summary"
+			            },
+			            "Object": {
+			              "Role": "service_call_aging"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "month_wise_summaries_have_service_call_aging"
 			        }
 			      ]
 			    },

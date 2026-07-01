@@ -18,11 +18,19 @@ table 'Failing component'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Part No'
+		dataType: string
+		lineageTag: bef7dd56-f3f4-4465-b6e6-e625e2ddf052
+		summarizeBy: none
+		sourceColumn: Part No
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Failing component' = m
 		mode: import
 		source =
 				let
-				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45Wci1LLMgvSizJL1LSUTIyMVCK1YlW8i8tScnPL1IIcHYCihqam4FFPfOQBY1MoYLFpTlQ7eaGYCHffCBXwcnHxRkoZmauFBsLAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Components = _t, Count = _t]),
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("hdE9a8MwEAbgvxI8Z7jTfUga48RDIaEf0C7BQ6BjqIqb9Pf3Tm2hUFtZDC96OL86HY/d8Hl6L9PpUqZu3W12+0gMqEKWFLpxvSjEkn2WhVbRmqHZErdmxGCJvmfcXy+vpUyrh23vpH8koCwC6EPaxJtQmidROWEK6kRmyNA/Bc7Asf6IqEn+1L17+1eFUsTbwlcfUkNwciGzIqoGBPDbhDAvIqtCbRp+e3xczz+bPwwvdiYZgS1FrOBQ7HDV73dbv+zmWQOAvQ5YQlkQwiTgV0FeEDkR1J0itQTdFN7U9jqOXw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Components = _t, #"Part No" = _t, Count = _t]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Components", type text}, {"Count", Int64.Type}})
 				in
 				    #"Changed Type"

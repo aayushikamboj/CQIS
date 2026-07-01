@@ -5,6 +5,47 @@
   "displayOption": "FitToPage",
   "height": 1080,
   "width": 1920,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "47272c8e898d8aa60891",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Failing component"
+              }
+            },
+            "Property": "Part No"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "023b13d897bfb67e7e79",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "2d4f17fd9474a09446c4",
+        "boundFilter": "47272c8e898d8aa60891",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Failing component"
+              }
+            },
+            "Property": "Part No"
+          }
+        }
+      }
+    ]
+  },
   "objects": {
     "background": [
       {
@@ -14,7 +55,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Frame 1 (6).png'"
+                    "Value": "'Frame 1 (7).png'"
                   }
                 }
               },
@@ -23,7 +64,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Frame_1_(6)39769746106804904.png"
+                    "ItemName": "Frame_1_(7)06595855603939682.png"
                   }
                 }
               },

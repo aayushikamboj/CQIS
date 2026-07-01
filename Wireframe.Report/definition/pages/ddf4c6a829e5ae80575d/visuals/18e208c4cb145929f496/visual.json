@@ -1,0 +1,120 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "18e208c4cb145929f496",
+  "position": {
+    "x": 826.470588235294,
+    "y": 517.64705882352939,
+    "z": 42028,
+    "height": 257.35294117647055,
+    "width": 386.76470588235293,
+    "tabOrder": 11036
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Defect Code analysis"
+                    }
+                  },
+                  "Property": "Column1"
+                }
+              },
+              "queryRef": "Defect Code analysis.Column1",
+              "nativeQueryRef": "Defect Code",
+              "active": true,
+              "displayName": "Defect Code"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Defect Code analysis"
+                        }
+                      },
+                      "Property": "CY"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Defect Code analysis.CY)",
+              "nativeQueryRef": "Sum of CY"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Defect Code analysis"
+                        }
+                      },
+                      "Property": "PY"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Defect Code analysis.PY)",
+              "nativeQueryRef": "Sum of PY"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Defect Code analysis"
+                      }
+                    },
+                    "Property": "CY"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -433,6 +433,32 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8804,
+            "y": 487.48603949342146
+          },
+          "nodeIndex": "Defect Code analysis",
+          "nodeLineageTag": "05a55d17-e3b3-4bcb-a817-625023b00430",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9088,
+            "y": 475.48603949342146
+          },
+          "nodeIndex": "Primary Synotom Analysis",
+          "nodeLineageTag": "60f8b22b-b26b-4366-bc1e-275b6fd2e054",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

@@ -1,0 +1,31 @@
+table 'Primary Synotom Analysis'
+	lineageTag: 60f8b22b-b26b-4366-bc1e-275b6fd2e054
+
+	column 'Primary Symptom'
+		dataType: string
+		lineageTag: 4bc54f66-b508-4fb7-878a-626761a1a7ab
+		summarizeBy: none
+		sourceColumn: Primary Symptom
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total
+		dataType: int64
+		formatString: 0
+		lineageTag: b1677930-6b8c-4e2c-9bfd-61fda6214944
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Primary Synotom Analysis' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("LcyxFoAgCEDRf2F2CNGaSWryUDvH//+NUBrv8J4ZyMUCCTIVGMmAT2EnZvqpj7PUpaZtCusefLU7acNg53ulR9BXk8U5Pg==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Primary Symptom" = _t, Total = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Primary Symptom", type text}, {"Total", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
