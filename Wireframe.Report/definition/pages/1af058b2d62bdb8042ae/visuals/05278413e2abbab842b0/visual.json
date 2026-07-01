@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "05278413e2abbab842b0",
   "position": {
     "x": 272,
@@ -23,7 +23,7 @@
                       "Entity": "State city master"
                     }
                   },
-                  "Property": "Column1"
+                  "Property": "State"
                 }
               },
               "queryRef": "State city master.Column1",
@@ -38,7 +38,7 @@
                       "Entity": "State city master"
                     }
                   },
-                  "Property": "Column2"
+                  "Property": "City"
                 }
               },
               "queryRef": "State city master.Column2",
@@ -102,7 +102,7 @@
                     "Entity": "State city master"
                   }
                 },
-                "Property": "Column1"
+                "Property": "State"
               }
             },
             "direction": "Ascending"
@@ -115,7 +115,7 @@
                     "Entity": "State city master"
                   }
                 },
-                "Property": "Column2"
+                "Property": "City"
               }
             },
             "direction": "Ascending"

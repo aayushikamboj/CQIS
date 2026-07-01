@@ -3070,16 +3070,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "model": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
 			          "trial": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -10240,48 +10230,144 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "state_city_master.column_1": {
+			    "state_city_master.state": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "State city master",
-			          "ConceptualProperty": "Column1"
+			          "ConceptualProperty": "State"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "column 1": {
+			          "state": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "Column1": {
+			          "location": {
 			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "territory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        }
 			      ]
 			    },
-			    "state_city_master.column_2": {
+			    "state_city_master.city": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "State city master",
-			          "ConceptualProperty": "Column2"
+			          "ConceptualProperty": "City"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "column 2": {
+			          "city": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "Column2": {
+			          "location": {
 			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "metropolis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "town": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "metropolitan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        }
 			      ]
@@ -10496,6 +10582,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Share %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -13407,9 +13503,684 @@ cultureInfo en-US
 			        }
 			      ],
 			      "SemanticType": "Time"
+			    },
+			    "month_wise_summary.py": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Month wise summary",
+			          "ConceptualProperty": "PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "py": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "decomposition": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Decomposition"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "decomposition": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rottenness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "putrefaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "disintegration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "corrosion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fetidness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "putridness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "moldiness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "decay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "decomposition.product": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Decomposition",
+			          "ConceptualProperty": "Product"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "decomposition.subproduct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Decomposition",
+			          "ConceptualProperty": "Sub-Product"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sub-product": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sub product": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sub-artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "sub artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sub-item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sub-merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sub-produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sub item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sub merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sub produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "decomposition.column_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Decomposition",
+			          "ConceptualProperty": "Column1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "state_city_master.branch": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "State city master",
+			          "ConceptualProperty": "Branch"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "branch": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "subdivision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "outlet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "office": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "turnoff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "turn-off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "arm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tributary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "turn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "fork": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "month_wise_summary_has_service_call_aging": {
+			      "Binding": {
+			        "ConceptualEntity": "Month wise summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month_wise_summary": {
+			          "Target": {
+			            "Entity": "month_wise_summary"
+			          }
+			        },
+			        "service_call_aging": {
+			          "Target": {
+			            "Entity": "service_call_aging"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month_wise_summary"
+			            },
+			            "Object": {
+			              "Role": "service_call_aging"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "month_wise_summaries_have_service_call_aging"
+			        }
+			      ]
+			    },
+			    "month_wise_summary_has_page_navigation": {
+			      "Binding": {
+			        "ConceptualEntity": "Month wise summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month_wise_summary": {
+			          "Target": {
+			            "Entity": "month_wise_summary"
+			          }
+			        },
+			        "page_navigation": {
+			          "Target": {
+			            "Entity": "page_navigation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month_wise_summary"
+			            },
+			            "Object": {
+			              "Role": "page_navigation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "month_wise_summaries_have_page_navigations"
+			        }
+			      ]
+			    },
+			    "month_wise_summary_has_early___late_life": {
+			      "Binding": {
+			        "ConceptualEntity": "Month wise summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month_wise_summary": {
+			          "Target": {
+			            "Entity": "month_wise_summary"
+			          }
+			        },
+			        "early___late_life": {
+			          "Target": {
+			            "Entity": "early___late_life"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month_wise_summary"
+			            },
+			            "Object": {
+			              "Role": "early___late_life"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "month_wise_summaries_have_early___late_lives"
+			        }
+			      ]
+			    },
+			    "state_city_master_has_stability_index": {
+			      "Binding": {
+			        "ConceptualEntity": "State city master"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "state_city_master": {
+			          "Target": {
+			            "Entity": "state_city_master"
+			          }
+			        },
+			        "stability_index": {
+			          "Target": {
+			            "Entity": "stability_index"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "state_city_master"
+			            },
+			            "Object": {
+			              "Role": "stability_index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "state_city_masters_have_stability_indices"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stability_index"
+			            },
+			            "Object": {
+			              "Role": "state_city_master"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stability_indices_have_state_city_masters"
+			        }
+			      ]
+			    },
+			    "page_navigation_has_month_wise_summary": {
+			      "Binding": {
+			        "ConceptualEntity": "Page Navigation"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "page_navigation": {
+			          "Target": {
+			            "Entity": "page_navigation"
+			          }
+			        },
+			        "month_wise_summary": {
+			          "Target": {
+			            "Entity": "month_wise_summary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "page_navigation"
+			            },
+			            "Object": {
+			              "Role": "month_wise_summary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "page_navigations_have_month_wise_summaries"
+			        }
+			      ]
+			    },
+			    "open_hold_defect_has_ASC_DSC_defect": {
+			      "Binding": {
+			        "ConceptualEntity": "Open/hold defects"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "open_hold_defect": {
+			          "Target": {
+			            "Entity": "open_hold_defect"
+			          }
+			        },
+			        "ASC_DSC_defect": {
+			          "Target": {
+			            "Entity": "ASC_DSC_defect"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "open_hold_defect"
+			            },
+			            "Object": {
+			              "Role": "ASC_DSC_defect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "open_hold_defects_have_ASC_DSC_defects"
+			        }
+			      ]
+			    },
+			    "active_aging_has_active__inactive_call": {
+			      "Binding": {
+			        "ConceptualEntity": "active aging"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "active_aging": {
+			          "Target": {
+			            "Entity": "active_aging"
+			          }
+			        },
+			        "active__inactive_call": {
+			          "Target": {
+			            "Entity": "active__inactive_call"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "active_aging"
+			            },
+			            "Object": {
+			              "Role": "active__inactive_call"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "active_aging_have_active__inactive_calls"
+			        }
+			      ]
+			    },
 			    "ASC_DSC_defect_has_open_hold_defect": {
 			      "Binding": {
 			        "ConceptualEntity": "ASC/DSC Defects"
@@ -14020,6 +14791,138 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "early___late_lives_have_month_wise_summaries"
+			        }
+			      ]
+			    },
+			    "decomposition_has_column_1": {
+			      "Binding": {
+			        "ConceptualEntity": "Decomposition"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "decomposition": {
+			          "Target": {
+			            "Entity": "decomposition"
+			          }
+			        },
+			        "decomposition.column_1": {
+			          "Target": {
+			            "Entity": "decomposition.column_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "decomposition"
+			            },
+			            "Object": {
+			              "Role": "decomposition.column_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "decompositions_have_column_1"
+			        }
+			      ]
+			    },
+			    "decomposition_has_subproduct": {
+			      "Binding": {
+			        "ConceptualEntity": "Decomposition"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "decomposition": {
+			          "Target": {
+			            "Entity": "decomposition"
+			          }
+			        },
+			        "decomposition.subproduct": {
+			          "Target": {
+			            "Entity": "decomposition.subproduct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "decomposition"
+			            },
+			            "Object": {
+			              "Role": "decomposition.subproduct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "decompositions_have_subproducts"
+			        }
+			      ]
+			    },
+			    "decomposition_has_product": {
+			      "Binding": {
+			        "ConceptualEntity": "Decomposition"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "decomposition": {
+			          "Target": {
+			            "Entity": "decomposition"
+			          }
+			        },
+			        "decomposition.product": {
+			          "Target": {
+			            "Entity": "decomposition.product"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "decomposition"
+			            },
+			            "Object": {
+			              "Role": "decomposition.product"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "decompositions_have_products"
+			        }
+			      ]
+			    },
+			    "month_wise_summary_has_py": {
+			      "Binding": {
+			        "ConceptualEntity": "Month wise summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month_wise_summary": {
+			          "Target": {
+			            "Entity": "month_wise_summary"
+			          }
+			        },
+			        "month_wise_summary.py": {
+			          "Target": {
+			            "Entity": "month_wise_summary.py"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month_wise_summary"
+			            },
+			            "Object": {
+			              "Role": "month_wise_summary.py"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "month_wise_summaries_have_pies"
 			        }
 			      ]
 			    },
@@ -15277,7 +16180,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "state_city_master_has_column_2": {
+			    "state_city_master_has_city": {
 			      "Binding": {
 			        "ConceptualEntity": "State city master"
 			      },
@@ -15288,9 +16191,9 @@ cultureInfo en-US
 			            "Entity": "state_city_master"
 			          }
 			        },
-			        "state_city_master.column_2": {
+			        "state_city_master.city": {
 			          "Target": {
-			            "Entity": "state_city_master.column_2"
+			            "Entity": "state_city_master.city"
 			          }
 			        }
 			      },
@@ -15301,16 +16204,16 @@ cultureInfo en-US
 			              "Role": "state_city_master"
 			            },
 			            "Object": {
-			              "Role": "state_city_master.column_2"
+			              "Role": "state_city_master.city"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "state_city_masters_have_column_2"
+			          "ID": "state_city_masters_have_cities"
 			        }
 			      ]
 			    },
-			    "state_city_master_has_column_1": {
+			    "state_city_master_has_state": {
 			      "Binding": {
 			        "ConceptualEntity": "State city master"
 			      },
@@ -15321,9 +16224,9 @@ cultureInfo en-US
 			            "Entity": "state_city_master"
 			          }
 			        },
-			        "state_city_master.column_1": {
+			        "state_city_master.state": {
 			          "Target": {
-			            "Entity": "state_city_master.column_1"
+			            "Entity": "state_city_master.state"
 			          }
 			        }
 			      },
@@ -15334,12 +16237,12 @@ cultureInfo en-US
 			              "Role": "state_city_master"
 			            },
 			            "Object": {
-			              "Role": "state_city_master.column_1"
+			              "Role": "state_city_master.state"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "state_city_masters_have_column_1"
+			          "ID": "state_city_masters_have_states"
 			        }
 			      ]
 			    },
@@ -18739,201 +19642,93 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "active_aging_has_active__inactive_call": {
+			    "state_city_master_in_city": {
 			      "Binding": {
-			        "ConceptualEntity": "active aging"
+			        "ConceptualEntity": "State city master"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "active_aging": {
+			        "state_city_master": {
 			          "Target": {
-			            "Entity": "active_aging"
+			            "Entity": "state_city_master"
 			          }
 			        },
-			        "active__inactive_call": {
+			        "state_city_master.city": {
 			          "Target": {
-			            "Entity": "active__inactive_call"
+			            "Entity": "state_city_master.city"
 			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "state_city_master.city"
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Preposition": {
 			            "Subject": {
-			              "Role": "active_aging"
+			              "Role": "state_city_master"
 			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
 			            "Object": {
-			              "Role": "active__inactive_call"
+			              "Role": "state_city_master.city"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "active_aging_have_active__inactive_calls"
+			          "ID": "state_city_masters_are_in_cities"
 			        }
 			      ]
 			    },
-			    "open_hold_defect_has_ASC_DSC_defect": {
+			    "state_city_master_in_state": {
 			      "Binding": {
-			        "ConceptualEntity": "Open/hold defects"
+			        "ConceptualEntity": "State city master"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "open_hold_defect": {
+			        "state_city_master": {
 			          "Target": {
-			            "Entity": "open_hold_defect"
+			            "Entity": "state_city_master"
 			          }
 			        },
-			        "ASC_DSC_defect": {
+			        "state_city_master.state": {
 			          "Target": {
-			            "Entity": "ASC_DSC_defect"
+			            "Entity": "state_city_master.state"
 			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "state_city_master.state"
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Preposition": {
 			            "Subject": {
-			              "Role": "open_hold_defect"
+			              "Role": "state_city_master"
 			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
 			            "Object": {
-			              "Role": "ASC_DSC_defect"
+			              "Role": "state_city_master.state"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "open_hold_defects_have_ASC_DSC_defects"
-			        }
-			      ]
-			    },
-			    "page_navigation_has_month_wise_summary": {
-			      "Binding": {
-			        "ConceptualEntity": "Page Navigation"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "page_navigation": {
-			          "Target": {
-			            "Entity": "page_navigation"
-			          }
-			        },
-			        "month_wise_summary": {
-			          "Target": {
-			            "Entity": "month_wise_summary"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "page_navigation"
-			            },
-			            "Object": {
-			              "Role": "month_wise_summary"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "page_navigations_have_month_wise_summaries"
-			        }
-			      ]
-			    },
-			    "month_wise_summary_has_early___late_life": {
-			      "Binding": {
-			        "ConceptualEntity": "Month wise summary"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "month_wise_summary": {
-			          "Target": {
-			            "Entity": "month_wise_summary"
-			          }
-			        },
-			        "early___late_life": {
-			          "Target": {
-			            "Entity": "early___late_life"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "month_wise_summary"
-			            },
-			            "Object": {
-			              "Role": "early___late_life"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_wise_summaries_have_early___late_lives"
-			        }
-			      ]
-			    },
-			    "month_wise_summary_has_page_navigation": {
-			      "Binding": {
-			        "ConceptualEntity": "Month wise summary"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "month_wise_summary": {
-			          "Target": {
-			            "Entity": "month_wise_summary"
-			          }
-			        },
-			        "page_navigation": {
-			          "Target": {
-			            "Entity": "page_navigation"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "month_wise_summary"
-			            },
-			            "Object": {
-			              "Role": "page_navigation"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_wise_summaries_have_page_navigations"
-			        }
-			      ]
-			    },
-			    "month_wise_summary_has_service_call_aging": {
-			      "Binding": {
-			        "ConceptualEntity": "Month wise summary"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "month_wise_summary": {
-			          "Target": {
-			            "Entity": "month_wise_summary"
-			          }
-			        },
-			        "service_call_aging": {
-			          "Target": {
-			            "Entity": "service_call_aging"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "month_wise_summary"
-			            },
-			            "Object": {
-			              "Role": "service_call_aging"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_wise_summaries_have_service_call_aging"
+			          "ID": "state_city_masters_are_in_states"
 			        }
 			      ]
 			    },

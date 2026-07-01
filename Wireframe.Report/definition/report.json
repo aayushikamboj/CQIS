@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "Fluent2-CY26SU05",
@@ -68,6 +68,11 @@
           "name": "Custom10970134188654079.json",
           "path": "Custom10970134188654079.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "Frame_1_(6)39769746106804904.png",
+          "path": "Frame_1_(6)39769746106804904.png",
+          "type": "Image"
         },
         {
           "name": "Frame_3_(4)4603894020548728.png",

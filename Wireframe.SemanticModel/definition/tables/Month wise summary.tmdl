@@ -47,16 +47,27 @@ table 'Month wise summary'
 
 		annotation SummarizationSetBy = Automatic
 
+	column PY
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bd373ed-3fba-41c0-a82e-c399b3a6462c
+		summarizeBy: sum
+		sourceColumn: PY
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Month wise summary' = m
 		mode: import
 		source =
 				let
-				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8krMU9JRMjY2AJJGQGxqASQMlWJ1opXcUpNAggYgKVOQqLEpWBFIzjexCCRiBJIzAbNAmo3Bco4FYDlTA7BJOkpmEEUQbZVwI0FSphCzQVJepSCHGJqYA0mwBhBhphQbCwA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Manufacturing Month" = _t, #"Total Counts" = _t, #"Avg Age failure" = _t, #"No of days " = _t, Sort = _t]),
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("PY49DoAgDIXvwsxQKEUcXRxMPAFx0MTVGBMHb28foENf+tqvPzmbaT2MNcyk6jUkqTgYLS02m3Hf4AiAoMfSUJcqMa8XnAcRSoYuI6NKDGchhNru+KP0rXj+IwDku+ZTX4DpxpsudKplGBJRigosLw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Manufacturing Month" = _t, #"Total Counts" = _t, #"Avg Age failure" = _t, #"No of days " = _t, Sort = _t, PY = _t]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Manufacturing Month", type text}, {"Total Counts", Int64.Type}, {"Avg Age failure", Int64.Type}, {"No of days ", Int64.Type}})
 				in
 				    #"Changed Type"
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
 	annotation PBI_NavigationStepName = Navigation
 

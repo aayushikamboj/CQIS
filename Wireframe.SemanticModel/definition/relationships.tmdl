@@ -82,3 +82,7 @@ relationship 5c48b363-a757-43a6-9c7c-36d987d98f9f
 	fromColumn: Date.Date
 	toColumn: LocalDateTable_bbe31cef-eaa3-475f-bb49-3c56ac782521.Date
 
+relationship AutoDetected_731e0431-ea66-41b3-9148-cfe4f8d2b6ce
+	fromColumn: 'State city master'.Branch
+	toColumn: 'Stability index'.Branch
+
