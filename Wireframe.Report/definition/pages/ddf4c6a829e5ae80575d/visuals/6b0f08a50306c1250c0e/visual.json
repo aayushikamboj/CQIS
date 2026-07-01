@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "06c0c4f9a4f6d1202d0f",
+  "name": "6b0f08a50306c1250c0e",
   "position": {
-    "x": 1303.125,
-    "y": 114.58333333333334,
-    "z": 15000,
-    "height": 29.166666666666668,
-    "width": 157.29166666666669,
-    "tabOrder": 16000
+    "x": 1668.421052631579,
+    "y": 217.89473684210526,
+    "z": 42004,
+    "height": 47.368421052631582,
+    "width": 235.78947368421055,
+    "tabOrder": 34007
   },
   "visual": {
     "visualType": "shape",
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Open >180 days'"
+                  "Value": "'776 Active Engineers'"
                 }
               }
             },
@@ -86,21 +86,21 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
+                  "Value": "13D"
                 }
               }
             },
             "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'left'"
+                  "Value": "'center'"
                 }
               }
             },
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -108,6 +108,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "a06cb05f598e432657e6",
+  "name": "9ef9da9bc36fcc40fe27",
   "position": {
-    "x": 295.83333333333337,
-    "y": 70,
-    "z": 42010,
-    "height": 30,
-    "width": 107.5,
-    "tabOrder": 11018
+    "x": 838.88888888888891,
+    "y": 561.11111111111109,
+    "z": 36000,
+    "height": 29.166666666666668,
+    "width": 225,
+    "tabOrder": 32000
   },
   "visual": {
     "visualType": "shape",
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Active Calls'"
+                  "Value": "'Defect Code Analysis'"
                 }
               }
             },

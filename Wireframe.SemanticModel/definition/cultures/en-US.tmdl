@@ -9819,16 +9819,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "svc centre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
 			          "package centre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -13064,16 +13054,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "svc centre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
 			          "package centre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -14385,9 +14365,696 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "SVC__info": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SVC  info": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SVC info": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "info": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "svc information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "svc data": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "data": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "svc gen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "svc news": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "svc intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "svc knowledge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "news": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "SVC__info.SVC_centre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info",
+			          "ConceptualProperty": "SVC Centre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SVC centre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "centre": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "SVC__info.engineer_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info",
+			          "ConceptualProperty": "Engineer Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "engineer name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "engineer nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "engineer title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "engineer label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "engineer tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "SVC__info.repeat_part_replaced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info",
+			          "ConceptualProperty": "Repeat part Replaced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "repeat part replaced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "repeat quantity replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "repeat share replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "repeat portion replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "repeat fragment replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "repeat slice replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "repeat chunk replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "repeat amount replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "repeat measure replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "repeat cut replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "repeat segment replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "Part Replaced": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "SVC__info.no_of_times_replaced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info",
+			          "ConceptualProperty": "No of times replaced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "no of times replaced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "no of time replaced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "number of time replaced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "SVC__info.total_call": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info",
+			          "ConceptualProperty": "Total Calls"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total call": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "call": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total song": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "song": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "total noise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total cry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total sound": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "noise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "sound": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "SVC__info.open": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info",
+			          "ConceptualProperty": "Open"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "open": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sweeping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "SVC__info.hold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info",
+			          "ConceptualProperty": "Hold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "grip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grasp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "clasp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "clutch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "embrace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "clamp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "clench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "foothold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "handhold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "toehold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "SVC__info.avg_repair_day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SVC  info",
+			          "ConceptualProperty": "Avg Repair Days"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg repair day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average repair day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "month_wise_summary_has_service_call_aging": {
+			      "Binding": {
+			        "ConceptualEntity": "Month wise summary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month_wise_summary": {
+			          "Target": {
+			            "Entity": "month_wise_summary"
+			          }
+			        },
+			        "service_call_aging": {
+			          "Target": {
+			            "Entity": "service_call_aging"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month_wise_summary"
+			            },
+			            "Object": {
+			              "Role": "service_call_aging"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "month_wise_summaries_have_service_call_aging"
+			        }
+			      ]
+			    },
 			    "month_wise_summary_has_page_navigation": {
 			      "Binding": {
 			        "ConceptualEntity": "Month wise summary"
@@ -15209,6 +15876,270 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "early___late_lives_have_month_wise_summaries"
+			        }
+			      ]
+			    },
+			    "SVC__info_has_avg_repair_day": {
+			      "Binding": {
+			        "ConceptualEntity": "SVC  info"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SVC__info": {
+			          "Target": {
+			            "Entity": "SVC__info"
+			          }
+			        },
+			        "SVC__info.avg_repair_day": {
+			          "Target": {
+			            "Entity": "SVC__info.avg_repair_day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SVC__info"
+			            },
+			            "Object": {
+			              "Role": "SVC__info.avg_repair_day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SVC__info_have_avg_repair_days"
+			        }
+			      ]
+			    },
+			    "SVC__info_has_hold": {
+			      "Binding": {
+			        "ConceptualEntity": "SVC  info"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SVC__info": {
+			          "Target": {
+			            "Entity": "SVC__info"
+			          }
+			        },
+			        "SVC__info.hold": {
+			          "Target": {
+			            "Entity": "SVC__info.hold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SVC__info"
+			            },
+			            "Object": {
+			              "Role": "SVC__info.hold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SVC__info_have_holds"
+			        }
+			      ]
+			    },
+			    "SVC__info_has_open": {
+			      "Binding": {
+			        "ConceptualEntity": "SVC  info"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SVC__info": {
+			          "Target": {
+			            "Entity": "SVC__info"
+			          }
+			        },
+			        "SVC__info.open": {
+			          "Target": {
+			            "Entity": "SVC__info.open"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SVC__info"
+			            },
+			            "Object": {
+			              "Role": "SVC__info.open"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SVC__info_have_opens"
+			        }
+			      ]
+			    },
+			    "SVC__info_has_total_call": {
+			      "Binding": {
+			        "ConceptualEntity": "SVC  info"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SVC__info": {
+			          "Target": {
+			            "Entity": "SVC__info"
+			          }
+			        },
+			        "SVC__info.total_call": {
+			          "Target": {
+			            "Entity": "SVC__info.total_call"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SVC__info"
+			            },
+			            "Object": {
+			              "Role": "SVC__info.total_call"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SVC__info_have_total_calls"
+			        }
+			      ]
+			    },
+			    "SVC__info_has_no_of_times_replaced": {
+			      "Binding": {
+			        "ConceptualEntity": "SVC  info"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SVC__info": {
+			          "Target": {
+			            "Entity": "SVC__info"
+			          }
+			        },
+			        "SVC__info.no_of_times_replaced": {
+			          "Target": {
+			            "Entity": "SVC__info.no_of_times_replaced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SVC__info"
+			            },
+			            "Object": {
+			              "Role": "SVC__info.no_of_times_replaced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SVC__info_have_no_of_times_replaced"
+			        }
+			      ]
+			    },
+			    "SVC__info_has_repeat_part_replaced": {
+			      "Binding": {
+			        "ConceptualEntity": "SVC  info"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SVC__info": {
+			          "Target": {
+			            "Entity": "SVC__info"
+			          }
+			        },
+			        "SVC__info.repeat_part_replaced": {
+			          "Target": {
+			            "Entity": "SVC__info.repeat_part_replaced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SVC__info"
+			            },
+			            "Object": {
+			              "Role": "SVC__info.repeat_part_replaced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SVC__info_have_repeat_part_replaced"
+			        }
+			      ]
+			    },
+			    "SVC__info_has_engineer_name": {
+			      "Binding": {
+			        "ConceptualEntity": "SVC  info"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SVC__info": {
+			          "Target": {
+			            "Entity": "SVC__info"
+			          }
+			        },
+			        "SVC__info.engineer_name": {
+			          "Target": {
+			            "Entity": "SVC__info.engineer_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SVC__info"
+			            },
+			            "Object": {
+			              "Role": "SVC__info.engineer_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SVC__info_have_engineer_names"
+			        }
+			      ]
+			    },
+			    "SVC__info_has_SVC_centre": {
+			      "Binding": {
+			        "ConceptualEntity": "SVC  info"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "SVC__info": {
+			          "Target": {
+			            "Entity": "SVC__info"
+			          }
+			        },
+			        "SVC__info.SVC_centre": {
+			          "Target": {
+			            "Entity": "SVC__info.SVC_centre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "SVC__info"
+			            },
+			            "Object": {
+			              "Role": "SVC__info.SVC_centre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "SVC__info_have_SVC_centres"
 			        }
 			      ]
 			    },
@@ -20345,39 +21276,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "state_city_masters_are_in_states"
-			        }
-			      ]
-			    },
-			    "month_wise_summary_has_service_call_aging": {
-			      "Binding": {
-			        "ConceptualEntity": "Month wise summary"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "month_wise_summary": {
-			          "Target": {
-			            "Entity": "month_wise_summary"
-			          }
-			        },
-			        "service_call_aging": {
-			          "Target": {
-			            "Entity": "service_call_aging"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "month_wise_summary"
-			            },
-			            "Object": {
-			              "Role": "service_call_aging"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_wise_summaries_have_service_call_aging"
 			        }
 			      ]
 			    },

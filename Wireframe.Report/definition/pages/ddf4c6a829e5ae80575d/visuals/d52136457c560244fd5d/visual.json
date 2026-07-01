@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "aef87f53216235012b84",
+  "name": "d52136457c560244fd5d",
   "position": {
-    "x": 28.461538461538453,
-    "y": 46.692307692307679,
-    "z": 14000,
-    "height": 29.23076923076923,
-    "width": 56.153846153846153,
-    "tabOrder": 11002
+    "x": 277.77777777777777,
+    "y": 805.55555555555554,
+    "z": 38000,
+    "height": 38.888888888888893,
+    "width": 145.83333333333334,
+    "tabOrder": 34000
   },
   "visual": {
     "visualType": "shape",
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'HOLD'"
+                  "Value": "'Chasis Defects'"
                 }
               }
             },
@@ -77,7 +77,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#B7410F'"
+                      "Value": "'#A50034'"
                     }
                   }
                 }
@@ -382,6 +382,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "1ecfbc341acc4fd91b8c",
   "howCreated": "InsertVisualButton"
 }

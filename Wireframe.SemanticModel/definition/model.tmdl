@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["RNPs","RNP Number","Early / Late Life","Failure %age","Frequency of repetition","Table","svc engg","Parts replacement","Sample","Defects Repetition Branch Wise","Product Defect%","Trend","Stability index","P/N","Active/ Inactive Calls","ASC/DSC","Branch wise ASC/DSC","ASC/DSC Defects","active aging","Open/hold defects","Page Navigation","Open/Hold KPI","Warranty Type KPI","Active SVC KPI","Failing component","State city master","Month wise summary","Sub-product","Service call Aging","Engineer performance","RNP >180","Decomposition","Defect Code analysis","Primary Synotom Analysis"]
+annotation PBI_QueryOrder = ["RNPs","RNP Number","Early / Late Life","Failure %age","Frequency of repetition","Table","svc engg","Parts replacement","Sample","Defects Repetition Branch Wise","Product Defect%","Trend","Stability index","P/N","Active/ Inactive Calls","ASC/DSC","Branch wise ASC/DSC","ASC/DSC Defects","active aging","Open/hold defects","Page Navigation","Open/Hold KPI","Warranty Type KPI","Active SVC KPI","Failing component","State city master","Month wise summary","Sub-product","Service call Aging","Engineer performance","RNP >180","Decomposition","Defect Code analysis","Primary Synotom Analysis","SVC  info"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -49,6 +49,7 @@ ref table LocalDateTable_bbe31cef-eaa3-475f-bb49-3c56ac782521
 ref table Decomposition
 ref table 'Defect Code analysis'
 ref table 'Primary Synotom Analysis'
+ref table 'SVC  info'
 
 ref cultureInfo en-US
 

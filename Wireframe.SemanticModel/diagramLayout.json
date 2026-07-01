@@ -459,6 +459,19 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9372,
+            "y": 403.48603949342146
+          },
+          "nodeIndex": "SVC  info",
+          "nodeLineageTag": "8e34d5f8-083e-401e-b1c3-b717e3ead066",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

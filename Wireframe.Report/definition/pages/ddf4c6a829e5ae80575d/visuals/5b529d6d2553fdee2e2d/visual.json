@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "11ab7a45723a6cf7274e",
+  "name": "5b529d6d2553fdee2e2d",
   "position": {
-    "x": 1481.6666666666667,
-    "y": 90,
-    "z": 42017,
-    "height": 56,
-    "width": 66.666666666666671,
-    "tabOrder": 11025
+    "x": 281.94444444444446,
+    "y": 291.66666666666669,
+    "z": 33000,
+    "height": 37.5,
+    "width": 226.38888888888889,
+    "tabOrder": 29000
   },
   "visual": {
     "visualType": "shape",
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'89'"
+                  "Value": "'Defects by Prod. Month'"
                 }
               }
             },
@@ -76,9 +76,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#A50034'"
                     }
                   }
                 }
@@ -87,7 +86,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "22D"
+                  "Value": "14D"
                 }
               }
             },

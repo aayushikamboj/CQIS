@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "a640fa0371619880c359",
+  "name": "df7b00b504be6d579d7c",
   "position": {
-    "x": 1588,
-    "y": 86,
-    "z": 42024,
-    "height": 232,
-    "width": 332,
-    "tabOrder": 11032
+    "x": 1608.3333333333335,
+    "y": 298.95833333333337,
+    "z": 32000,
+    "height": 212.5,
+    "width": 289.58333333333337,
+    "tabOrder": 28000
   },
   "visual": {
     "visualType": "donutChart",
@@ -179,7 +179,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#DB8D93'"
+                      "Value": "'#AE204E'"
                     }
                   }
                 }
@@ -220,7 +220,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#DCCD86'"
+                      "Value": "'#D24874'"
                     }
                   }
                 }
@@ -261,7 +261,7 @@
             "startAngle": {
               "expr": {
                 "Literal": {
-                  "Value": "55L"
+                  "Value": "287L"
                 }
               }
             }

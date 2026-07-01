@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "088bee7d4cb3f66f47cb",
+  "name": "98fae8f4c17b1ec601d0",
   "position": {
-    "x": 1414.6180963572267,
-    "y": 67.68507638072856,
-    "z": 42016,
-    "height": 29.330199764982375,
-    "width": 173.7250293772033,
-    "tabOrder": 11024
+    "x": 961.1111111111112,
+    "y": 294.44444444444446,
+    "z": 34000,
+    "height": 37.5,
+    "width": 275,
+    "tabOrder": 30000
   },
   "visual": {
     "visualType": "shape",
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Active SVC centres'"
+                  "Value": "'Defects by Product Hierarchy'"
                 }
               }
             },

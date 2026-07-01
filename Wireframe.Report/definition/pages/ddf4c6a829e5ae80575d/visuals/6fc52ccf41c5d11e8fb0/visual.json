@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "6fc52ccf41c5d11e8fb0",
   "position": {
-    "x": 680.88235294117646,
-    "y": 813.235294117647,
-    "z": 42033,
-    "height": 238.23529411764704,
-    "width": 916.17647058823525,
-    "tabOrder": 11041
+    "x": 680.55555555555554,
+    "y": 844.44444444444446,
+    "z": 31000,
+    "height": 208.33333333333334,
+    "width": 927.77777777777783,
+    "tabOrder": 27000
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,71 +20,28 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "RNP >180"
+                      "Entity": "SVC  info"
                     }
                   },
-                  "Property": "Service Centre"
+                  "Property": "SVC Centre"
                 }
               },
-              "queryRef": "RNP >180.Service Centre",
-              "nativeQueryRef": "Service Centre"
+              "queryRef": "SVC  info.SVC Centre",
+              "nativeQueryRef": "SVC Centre"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "RNP >180"
+                      "Entity": "SVC  info"
                     }
                   },
                   "Property": "Engineer Name"
                 }
               },
-              "queryRef": "RNP >180.Engineer Name",
+              "queryRef": "SVC  info.Engineer Name",
               "nativeQueryRef": "Engineer Name"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "RNP >180"
-                    }
-                  },
-                  "Property": "Defect Category"
-                }
-              },
-              "queryRef": "RNP >180.Defect Category",
-              "nativeQueryRef": "Defect Category"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "RNP >180"
-                    }
-                  },
-                  "Property": "Model Code"
-                }
-              },
-              "queryRef": "RNP >180.Model Code",
-              "nativeQueryRef": "Model",
-              "displayName": "Model"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "RNP >180"
-                    }
-                  },
-                  "Property": "Status"
-                }
-              },
-              "queryRef": "RNP >180.Status",
-              "nativeQueryRef": "Status"
             },
             {
               "field": {
@@ -93,21 +50,138 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "RNP >180"
+                          "Entity": "SVC  info"
                         }
                       },
-                      "Property": "Days Open"
+                      "Property": "Total Calls"
                     }
                   },
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(RNP >180.Days Open)",
-              "nativeQueryRef": "Days Open",
-              "displayName": "Days Open"
+              "queryRef": "Sum(SVC  info.Total Calls)",
+              "nativeQueryRef": "Total",
+              "displayName": "Total"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SVC  info"
+                        }
+                      },
+                      "Property": "Open"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SVC  info.Open)",
+              "nativeQueryRef": "Open",
+              "displayName": "Open"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SVC  info"
+                        }
+                      },
+                      "Property": "Hold"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SVC  info.Hold)",
+              "nativeQueryRef": "Hold",
+              "displayName": "Hold"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SVC  info"
+                    }
+                  },
+                  "Property": "Repeat part Replaced"
+                }
+              },
+              "queryRef": "SVC  info.Repeat part Replaced",
+              "nativeQueryRef": "Part Replaced",
+              "displayName": "Part Replaced"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SVC  info"
+                        }
+                      },
+                      "Property": "No of times replaced"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SVC  info.No of times replaced)",
+              "nativeQueryRef": "No of times replaced",
+              "displayName": "No of times replaced"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SVC  info"
+                        }
+                      },
+                      "Property": "Avg Repair Days"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(SVC  info.Avg Repair Days)",
+              "nativeQueryRef": "Avg Repair Days",
+              "displayName": "Avg Repair Days"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "SVC  info"
+                      }
+                    },
+                    "Property": "No of times replaced"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {
@@ -190,185 +264,13 @@
           }
         }
       ],
-      "columnFormatting": [
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "RNP >180.Service Centre"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "RNP >180.Engineer Name"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "RNP >180.Defect Category"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "RNP >180.Model Code"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "RNP >180.Status"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(RNP >180.Days Open)"
-          }
-        }
-      ],
-      "columnWidth": [
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "237.4173008807387D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "RNP >180.Service Centre"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "124.57859306159983D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "RNP >180.Model Code"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "158.87500305991725D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "RNP >180.Engineer Name"
-          }
-        }
-      ],
       "grid": [
         {
           "properties": {
             "rowPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "4D"
+                  "Value": "1D"
                 }
               }
             },
@@ -474,18 +376,191 @@
               }
             }
           }
-        },
+        }
+      ],
+      "columnWidth": [
         {
-          "properties": {},
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "197.82361605194677D"
                 }
               }
-            ],
-            "metadata": "Sum(RNP >180.Days Open)"
+            }
+          },
+          "selector": {
+            "metadata": "SVC  info.SVC Centre"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "192.58071927797863D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SVC  info.Engineer Name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "111.89189682560813D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(SVC  info.No of times replaced)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "100.89188993259015D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(SVC  info.Avg Repair Days)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "114.35134938200764D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SVC  info.Repeat part Replaced"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SVC  info.SVC Centre"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SVC  info.Engineer Name"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(SVC  info.Total Calls)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(SVC  info.Open)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(SVC  info.Hold)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "SVC  info.Repeat part Replaced"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(SVC  info.No of times replaced)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(SVC  info.Avg Repair Days)"
           }
         }
       ]

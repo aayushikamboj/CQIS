@@ -31,8 +31,6 @@
       {
         "name": "2d4f17fd9474a09446c4",
         "boundFilter": "47272c8e898d8aa60891",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Column": {
             "Expression": {
@@ -55,7 +53,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Frame 1 (7).png'"
+                    "Value": "'Frame 1 (11).png'"
                   }
                 }
               },
@@ -64,7 +62,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Frame_1_(7)06595855603939682.png"
+                    "ItemName": "Frame_1_(11)9358161624578462.png"
                   }
                 }
               },

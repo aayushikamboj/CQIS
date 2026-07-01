@@ -1,0 +1,83 @@
+table 'SVC  info'
+	lineageTag: 8e34d5f8-083e-401e-b1c3-b717e3ead066
+
+	column 'SVC Centre'
+		dataType: string
+		lineageTag: ce8e2a18-f4a1-4faf-ab98-30ba8bf04991
+		summarizeBy: none
+		sourceColumn: SVC Centre
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Engineer Name'
+		dataType: string
+		lineageTag: d3640884-7c04-4954-a434-0cf1f538b6ab
+		summarizeBy: none
+		sourceColumn: Engineer Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Repeat part Replaced'
+		dataType: string
+		lineageTag: f92e6b05-273f-4912-a26e-87531185ec4f
+		summarizeBy: none
+		sourceColumn: Repeat part Replaced
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No of times replaced'
+		dataType: int64
+		formatString: 0
+		lineageTag: d3de50fb-bf5f-4770-bb88-b8388cf455f8
+		summarizeBy: sum
+		sourceColumn: No of times replaced
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Calls'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9da83ca7-6843-4b91-ba8d-6870a429039d
+		summarizeBy: sum
+		sourceColumn: Total Calls
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: int64
+		formatString: 0
+		lineageTag: f9f7ad10-6a9d-419c-96ea-2ff0a9f45a62
+		summarizeBy: sum
+		sourceColumn: Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hold
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e7d737f-5fd1-419f-80e7-e33eef2424cf
+		summarizeBy: sum
+		sourceColumn: Hold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Avg Repair Days'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1330f403-3581-4bfe-8a73-2298bf3dc211
+		summarizeBy: sum
+		sourceColumn: Avg Repair Days
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'SVC  info' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("rZbdcpswEIVfZSe3bWcQ2Nj0bm2IhQ3EIxnaJNMLJaaBJsYdYpJxnqbP0ierMOABi7RNpxeS/79dnd2z8vX1mesBj/On9DYGnLmw2L4k6f12HcMkF9ltAp/oB3L2/oxTpK4NKJ+i7Y1M3dQsbShfmXIRvX5SrS/vu9hoBLS4eUhrpPzOZpuIzUasYV88iq/yDd+JNE0fWkQbNExNboZcY7lGCnPmgV9sbkQKwTbfJa1sy99wZOfI8ApwYoeMIfUxgHK36/yHlkk0MpKvynh6eUJy3IZKtPMVTLe3SZqdqOJfUPQdG3hI0fXabG1cp0+MQ/7VMv6aHLgLKr8XIQtn1OFOhz2o2cP60agyV9iXYMcPSQp8W3QkKgNchRN0GSyoVKbcOgH0Gmq2Aqi5z6adujbkJXN8mEqkzVApbaPGoF6ydRSsDXS/jnNxIxvkiC7zWyzQ9xG41DpUCmmcNiLp6ZrXGzzACDksIewVQj/Sq81S0RFMo/Sb2D+LtehrE9l84Ifzg42WKP0kP3AmbGAQMtI0s+8EqjY2wqx4FonYnao+R1+WU/a4U/a4g6GpW2Oj6hW96ewjWC2mHQAvcrEDm09LCbL7dLcoNiJnYiOym0Sk3sE93XLqfy7nKXgvXh4l7T7phbU7jqij5HwJE5HdiYdtflpADGTHAcOLXq5V26VcpMfgv+FmjyKHpZBJ95KbR713Tr3mb4Yr6jhLWDCXU5k5MMXheiVBNQHHhzMo9BCmSZxl4rQbmBxLnMJSGdcH6LgWxKrm7F9TuRtJ95UqzD+bhmXoBjGb03dHaJ+tz2Eu0u9Frtwsl+h76P38EeAlLtp0XWsy/ndf49xd0dfU7QjRyPsOdf3jzLDegI8gcjy8DG2K/JM0Yiea0edA0jNOX4/CcC6FB34RlkNVjo/A7sQ4DEBVKPVKmM3BK9ZJKrLTGeVtn+LveRzvgKfZXVINJ8OyRiNyPEHbRG+9kqsZWN6VFCcn103Db5t//EY+C/kKfeUqOyrTtmnP9P4Pfyc0vRWC1GughvIhEHeqDyQ29ABXvozkg2Rj1NTYGGjENK0aPW7NW2mzL78A", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"SVC Centre" = _t, #"Engineer Name" = _t, #"Repeat part Replaced" = _t, #"No of times replaced" = _t, #"Total Calls" = _t, Open = _t, Hold = _t, #"Avg Repair Days" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"SVC Centre", type text}, {"Engineer Name", type text}, {"Repeat part Replaced", type text}, {"No of times replaced", Int64.Type}, {"Total Calls", Int64.Type}, {"Open", Int64.Type}, {"Hold", Int64.Type}, {"Avg Repair Days", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
